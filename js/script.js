@@ -1,30 +1,4 @@
 (function($){
-  /*toTop start*/
-  // When to show the scroll link
-  // higher number = scroll link appears further down the page
-  var upperLimit = 1000;
-  // Our scroll link element
-  var scrollElem = $('#totop');
-  // Scroll to top speed
-  var scrollSpeed = 500;
-  // Show and hide the scroll to top link based on scroll position
-  $(window).scroll(function() {
-    var scrollTop = $(document).scrollTop();
-    if (scrollTop > upperLimit) {
-      $(scrollElem).stop().fadeTo(300, 1); // fade back in
-    } else {
-      $(scrollElem).stop().fadeTo(300, 0); // fade out
-    }
-  });
-
-  // Scroll to top animation on click
-  $(scrollElem).click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, scrollSpeed);
-    return false;
-  });
-  /*toTop end*/
   // Search
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,
@@ -64,62 +38,42 @@
     e.stopPropagation();
 
     var $this = $(this),
-      type = $this.attr('data-share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      id = 'article-share-box-' + $this.attr('data-id'),
       offset = $this.offset();
 
-    if (type == 'baidu') {
-      var box = $('#article-share-box');
-      shareDataUrl = $this.attr('data-url');
-      shareDataTitle = $this.attr('data-title');
+    if ($('#' + id).length){
+      var box = $('#' + id);
 
       if (box.hasClass('on')){
         box.removeClass('on');
         return;
       }
+    } else {
+      var html = [
+        '<div id="' + id + '" class="article-share-box">',
+          '<input class="article-share-input" value="' + url + '">',
+          '<div class="article-share-links">',
+            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+          '</div>',
+        '</div>'
+      ].join('');
 
-      $('.article-share-box.on').hide();
+      var box = $(html);
 
-      box.css({
-        top: offset.top + 25,
-        left: offset.left - 25
-      }).addClass('on');
-    } else{
-      var url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      id = 'article-share-box-' + $this.attr('data-id');
+      $('body').append(box);
+    }
 
-      if ($('#' + id).length){
-        var box = $('#' + id);
+    $('.article-share-box.on').hide();
 
-        if (box.hasClass('on')){
-          box.removeClass('on');
-          return;
-        }
-      } else {
-        var html = [
-          '<div id="' + id + '" class="article-share-box">',
-            '<input class="article-share-input" value="' + url + '">',
-            '<div class="article-share-links">',
-              '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-              '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-              '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-              '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-            '</div>',
-          '</div>'
-        ].join('');
-
-        var box = $(html);
-
-        $('body').append(box);
-      }
-
-      $('.article-share-box.on').hide();
-
-      box.css({
-        top: offset.top + 25,
-        left: offset.left
-      }).addClass('on');
-    };
+    box.css({
+      top: offset.top + 25,
+      left: offset.left
+    }).addClass('on');
   }).on('click', '.article-share-box', function(e){
     e.stopPropagation();
   }).on('click', '.article-share-box-input', function(){
@@ -180,4 +134,109 @@
 
     $container.removeClass('mobile-nav-on');
   });
+
+  /*
+   滚动函数
+   接收三个参数,
+   1 接收一个DOM对象
+   2 给目标对象切换class
+   3 触发的高度 (可选项,如果不指定高度,会将DOM的高度作为触发高度)
+   */
+    function setScrollElementClass(scrollTarget, toggleClass, scrollHeight){
+        document.addEventListener('scroll',function(){
+            var currentTop = window.pageYOffset;
+            currentTop > (scrollHeight||scrollTarget.clientHeight)
+                ?scrollTarget.classList.add(toggleClass)
+                :scrollTarget.classList.remove(toggleClass)
+        })
+    }
+
+    // 滾動懸停
+    (function(){
+      var nav = document.querySelector('#navbar .nav')
+      var user_info = document.querySelector('#user_info')
+      // setScrollElementClass(nav, 'fixed-navbar')
+      // setScrollElementClass(user_info, 'fixed-userinfo-container')
+    }());
+
+    // 主页导航模糊效果
+    (function() {
+
+        /*
+        * post: #main-wrap
+        *
+        * */
+        var navbar = document.querySelector('#navbar')
+        var content = document.querySelector('.main-inner-content')
+        var transtion = 0
+
+        var copyContent = content.cloneNode(true)
+        var blurCopyContent = document.createElement('div')
+            blurCopyContent.classList.add('content-blur')
+            blurCopyContent.appendChild(copyContent)
+            navbar.appendChild(blurCopyContent)
+
+        // 顶部间距
+        var spaceNumber = 30;
+        document.body.onscroll = function () {
+            transtion = 'translate3d(0,' + (-(document.body.scrollTop - spaceNumber) + 'px') + ',0)'
+            copyContent.style.transform = transtion
+        }
+
+    }());
+
+    // 搜索功能
+    (function () {
+        var search = document.querySelector('#search');
+        var close_search_btn = document.querySelector('#close_search');
+
+        var html_body = document.querySelector('html');
+        // content main wrap
+        var mainWrap = document.querySelector('#main-wrap');
+
+        // hidden nav menu
+        var navbar = document.querySelector('#navbar');
+        var nav_menu = document.querySelector('.nav-menu');
+        var search_container = document.querySelector('#search_container');
+        var nav_blur_content = document.querySelector('#navbar .content-blur');
+
+        // start searching
+        var doSearch = searchFunc,
+            search_data_path = 'search.xml',
+            search_input = document.querySelector('#search_input'),
+            search_result = document.querySelector('#search_result');
+
+        function toggleSearchView() {
+            search_input.value = '';
+            nav_menu.classList.toggle('is-invisible');
+            navbar.classList.toggle('overflow-hidden');
+            search_container.classList.toggle('is-hidden');
+            mainWrap.classList.toggle('blur');
+            mainWrap.classList.toggle('add-mask');
+            html_body.classList.toggle('overflow-hidden');
+            nav_blur_content.classList.toggle('is-hidden')
+        }
+
+        search.addEventListener('click', function () {
+          toggleSearchView();
+          search_input.focus();
+
+          search_input.onkeyup = function () {
+              doSearch(search_data_path, search_input.id, search_result.id);
+          }
+      });
+
+        close_search_btn.addEventListener('click', toggleSearchView)
+    }());
+
+
+    // 导航菜单
+    (function () {
+        var dropDownBtn = document.querySelector('#navMenuDropdown');
+        var navbar = document.querySelector('#navbar');
+
+        dropDownBtn.onclick = function () {
+            navbar.classList.toggle('overflow-hidden')
+        }
+    }())
 })(jQuery);
