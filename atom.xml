@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Leon Xiao&#39;s Blog</title>
   
-  
+  <subtitle>A Clumsy Interpreter</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-01-27T12:24:01.128Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://xlhaw.com/"/>
+  <updated>2018-02-20T07:33:34.734Z</updated>
+  <id>http://xlhaw.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Leon Xiao</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>New Year Plan</title>
+    <link href="http://xlhaw.com/2018/02/20/New-Year-Plan/"/>
+    <id>http://xlhaw.com/2018/02/20/New-Year-Plan/</id>
+    <published>2018-02-20T01:18:00.000Z</published>
+    <updated>2018-02-20T07:33:34.734Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>Say hi,say bye!</p><p>Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.</p><p>Cliche as always. I don’t recall how much blogs I have created before.But I’m sure this blog will last as long as I’m able to write. Consider this article as the debut of <em><strong>‘I do’</strong></em> series, as well as the end of <em><strong>‘Hello World’</strong></em> series.</p><!-- toc --><h2 id="Criteria"><a href="#Criteria" class="headerlink" title="Criteria"></a>Criteria</h2><ul><li>Forget about yourself, don’t critize and judge your past.</li><li>Be nice to every person in your life and be gratefull.</li><li>Don’t haste to the result,yet take your time in your mind.</li></ul><p>$$\sum_{i=1}^n a_i=0$$</p><h2 id="Drawback"><a href="#Drawback" class="headerlink" title="Drawback"></a>Drawback</h2><ul><li>Read, learn but don’t act and practice</li><li>jkj<ul><li>5454<ul><li>4646</li></ul></li></ul></li></ul><h2 id="Flowchart"><a href="#Flowchart" class="headerlink" title="Flowchart"></a>Flowchart</h2><div id="flowchart-0" class="flow-chart"></div><h2 id="Envision"><a href="#Envision" class="headerlink" title="Envision"></a>Envision</h2><p>I’m sure once upon a time, we all have a dream.</p><p>$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</p><p><img src="图片地址 “图片Title”" alt="图片Alt"></p><h2 id="Purpose"><a href="#Purpose" class="headerlink" title="Purpose"></a>Purpose</h2><pre><code>&lt;Two Tab&gt;dfadfdfad</code></pre><p>&lt; ddf &gt;</p><ul><li>Language</li><li>Python<ul><li>GUI</li><li><blockquote><p>kj </p></blockquote></li></ul></li></ul><blockquote><p>kj </p></blockquote><h2 id="Task-Breakdown"><a href="#Task-Breakdown" class="headerlink" title="Task Breakdown"></a>Task Breakdown</h2><p>The key is how to make it feasible, not just </p><p>You’re totally , no int</p><table><thead><tr><th>New</th><th>Better</th><th>You</th></tr></thead><tbody><tr><td>ne</td><td>b</td><td>c</td></tr></tbody></table><table><br>    <tr><br>        <th rowspan="2">值班人员</th><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>李强</td><br>        <td>张明</td><br>        <td>王平</td><br>    </tr><br></table><p><code>3sxzzsxzsxzsxszxzs</code></p><p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Startop=>operation: Your Operationcond=>condition: Yes or No?e=>endst->op->condcond(yes)->econd(no)->op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;Say hi,say bye!&lt;/p&gt;
+&lt;p&gt;Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.&lt;/p&gt;
+&lt;p&gt;Cliche as alway
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://xlhaw.com/2018/02/11/newday/"/>
+    <id>http://xlhaw.com/2018/02/11/newday/</id>
+    <published>2018-02-11T07:21:54.000Z</published>
+    <updated>2018-02-11T07:22:00.710Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Who-knows-Stuffs-happen"><a href="#Who-knows-Stuffs-happen" class="headerlink" title="Who knows? Stuffs happen!"></a>Who knows? Stuffs happen!</h1><p>Good start, but how long can you stick on it.</p><p>[TOC]</p><h2 id="who-know"><a href="#who-know" class="headerlink" title="who know"></a>who know</h2><h2 id="the-key-is-logic"><a href="#the-key-is-logic" class="headerlink" title="the key is logic"></a>the key is logic</h2><h2 id="Forget-about-the-format-focus-on-the-content"><a href="#Forget-about-the-format-focus-on-the-content" class="headerlink" title="Forget about the format, focus on the content"></a>Forget about the format, focus on the content</h2><h2 id="In-fact-you-don-t-have-much-time-now"><a href="#In-fact-you-don-t-have-much-time-now" class="headerlink" title="In fact you don;t have much time now"></a>In fact you don;t have much time now</h2><h3 id="what’s-next"><a href="#what’s-next" class="headerlink" title="what’s next"></a>what’s next</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Who-knows-Stuffs-happen&quot;&gt;&lt;a href=&quot;#Who-knows-Stuffs-happen&quot; class=&quot;headerlink&quot; title=&quot;Who knows? Stuffs happen!&quot;&gt;&lt;/a&gt;Who knows? Stuf
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>post</title>
-    <link href="http://yoursite.com/2018/01/27/post/"/>
-    <id>http://yoursite.com/2018/01/27/post/</id>
+    <link href="http://xlhaw.com/2018/01/27/post/"/>
+    <id>http://xlhaw.com/2018/01/27/post/</id>
     <published>2018-01-27T12:24:01.000Z</published>
     <updated>2018-01-27T12:24:01.128Z</updated>
     
@@ -32,8 +77,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/01/27/hello-world/"/>
-    <id>http://yoursite.com/2018/01/27/hello-world/</id>
+    <link href="http://xlhaw.com/2018/01/27/hello-world/"/>
+    <id>http://xlhaw.com/2018/01/27/hello-world/</id>
     <published>2018-01-27T11:02:01.601Z</published>
     <updated>2018-01-27T11:02:01.602Z</updated>
     
