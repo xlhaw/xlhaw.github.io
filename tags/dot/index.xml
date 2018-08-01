@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dot on Leon Xiao&#39;s Blog</title>
+    <link>https://xlhaw.github.io/tags/dot/</link>
+    <description>Recent content in Dot on Leon Xiao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlhaw.github.io/tags/dot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A brief Introduction to DOT language</title>
+      <link>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</guid>
+      <description>Free from Restrictions I have been quite obesssed with fancy tools and techniques. Before I encounter with DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. All the software has its charming part and restrictions, but it&amp;rsquo;s annoying to finetune for the position and format for a perfectionist or OD pa. Free yourself from the trival matter, you just need to focus on your own thinking, for,just like markdown help your the we, the dot help your .</description>
+    </item>
+    
+    <item>
+      <title>New Year Plan 2018</title>
+      <link>https://xlhaw.github.io/post/new-year-plan/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/new-year-plan/</guid>
+      <description>Say hi,say bye!
+Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.
+Cliche as always. I don&amp;rsquo;t recall how much blogs I have created before.But I&amp;rsquo;m sure this blog will last as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.
+Criteria  Forget about yourself, don&amp;rsquo;t critize and judge your past.</description>
+    </item>
+    
+  </channel>
+</rss>

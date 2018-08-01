@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leon Xiao&#39;s Blog</title>
+    <link>https://xlhaw.github.io/</link>
+    <description>Recent content on Leon Xiao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://xlhaw.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A brief Introduction to DOT language</title>
+      <link>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</guid>
+      <description>Free from Restrictions I have been quite obesssed with fancy tools and techniques. Before I encounter with DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. All the software has its charming part and restrictions, but it&amp;rsquo;s annoying to finetune for the position and format for a perfectionist or OD pa. Free yourself from the trival matter, you just need to focus on your own thinking, for,just like markdown help your the we, the dot help your .</description>
+    </item>
+    
+    <item>
+      <title>New Year Plan 2018</title>
+      <link>https://xlhaw.github.io/post/new-year-plan/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/new-year-plan/</guid>
+      <description>Say hi,say bye!
+Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.
+Cliche as always. I don&amp;rsquo;t recall how much blogs I have created before.But I&amp;rsquo;m sure this blog will last as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.
+Criteria  Forget about yourself, don&amp;rsquo;t critize and judge your past.</description>
+    </item>
+    
+    <item>
+      <title>Mongoose OS on ESPer</title>
+      <link>https://xlhaw.github.io/post/mos/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/mos/</guid>
+      <description>Recently I&amp;rsquo;ve got my hands on the craved-for IoT ESP32, thanks to DFRobot, and have been tinkering with it ever since. I&amp;rsquo;m really amazed by it since it packs both Bluetooth and WiFi in a small yet powerful unit. Since I received the MCU rather than the module, so, to use it, I made myself a breakout board named ESPer(because, why not? 😄). Feel free to check out its Instructable over here.</description>
+    </item>
+    
+    <item>
+      <title>Testing &#34;django-netjsonconfig&#34;</title>
+      <link>https://xlhaw.github.io/post/netjsonconfig/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/netjsonconfig/</guid>
+      <description>A task came up in Google Code-in which asked me to install the django-netjsonconfig module by OpenWISP. Furthermore, I&amp;rsquo;m also supposed to share the challenges I faced during the set-up process as a sort of feedback. I&amp;rsquo;ll be trying be concise in this post so, without further ado, I&amp;rsquo;m beginning with this post.
+Installing &amp;ldquo;django-netjsonconfig&amp;rdquo; The installation instructions for this this module have been well-documented on its GitHub repository. So I began the installation by creating a Python 2.</description>
+    </item>
+    
+    <item>
+      <title>Google Code-in with OpenWISP</title>
+      <link>https://xlhaw.github.io/post/gci/</link>
+      <pubDate>Sat, 13 Jan 2018 10:29:23 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/gci/</guid>
+      <description>Recently I&amp;rsquo;ve been participating in Google Code-in which is Google&amp;rsquo;s initiative to introduce young minds to the concept of FOSS, that is Free or Open-Source Softwares. This post is for sharing my experiences with GCI, as the title suggests. So let&amp;rsquo;s just get on it.
+It all began while I was returning from an outing on 5 December, 2017 and was searching the internet for Google Science Fair to check if I could participate in it or not.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/404/</guid>
+      <description> Error 404: Page Not Found Oopsie! It seems that the page that you&amp;rsquo;re trying to access doesn&amp;rsquo;t exist. 😟 If you&amp;rsquo;re sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page. </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/about/</guid>
+      <description>So, Who Am I? I’m a teenager who likes writing, programming and making stuff. Even setting the title as Who Am I for this article is reminding me of whoami in Linux. I feel the inner urge to contribute something to the Internet because I love writing and I believe posting something online enables users all around the globe to see your work and suggest improvements.
+Recently I&amp;rsquo;ve also started taking interest in web designing and hosting the fruitful results of which these site and blogs are!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/posts/data/html5-unsupported/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/posts/data/html5-unsupported/</guid>
+      <description>Update your Web browserbody {background: #fff;}.container {background: url(html5.png) no-repeat;position: absolute;width: 405px;height: 100px;top: 50%;margin-top: -102px;left: 50%;margin-left: -231px;}.title {left: 111px;width: 290px;height: 20px;font-family: Arial;font-size: 30px;color: #000;position: absolute;line-height: 28px;top: -1px;}.message {font-family: Arial;font-size: 12px;color: #4b4b4b;line-height: 16px;padding-top: 15px;padding-left: 1px;}Unsupported browserThe HTML5 content is not supported by</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/posts/gci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/posts/gci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/posts/jkj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/posts/jkj/</guid>
+      <description>SDQbody {background-color:#ced1d3;}#spr0_425562 {display:none;}(function() {var userAgent = navigator.userAgent.toLowerCase();var useMobilePlayer = userAgent.indexOf(&#34;iemobile&#34;) = 0);if (useMobilePlayer) {var insideMobilePlayer = userAgent.indexOf(&#34;ismobile&#34;) = 0 || location.hash.length  0;if (!insideMobilePlayer) {location.replace(&#34;ismplayer.html&#34; + location.search);}}})();#playerView {position:relative;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;}#playerView * {position:absolute;}#preloader {width: 50px;height: 50px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;border-radius: 10px;background-color: rgba(0, 0, 0, 0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/posts/mos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/posts/mos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xlhaw.github.io/posts/netjsonconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/posts/netjsonconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://xlhaw.github.io/post/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/post/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start Create a new post 1  $ hexo new &amp;#34;My New Post&amp;#34;   More info: Writing
+Run server 1  $ hexo server   More info: Server
+Generate static files 1  $ hexo generate   More info: Generating</description>
+    </item>
+    
+  </channel>
+</rss>

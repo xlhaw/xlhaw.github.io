@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Leon Xiao&#39;s Blog</title>
+    <link>https://xlhaw.github.io/tags/</link>
+    <description>Recent content in Tags on Leon Xiao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jan 2018 14:28:40 +0530</lastBuildDate>
+    
+	<atom:link href="https://xlhaw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django</title>
+      <link>https://xlhaw.github.io/tags/django/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dot</title>
+      <link>https://xlhaw.github.io/tags/dot/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/dot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esp32</title>
+      <link>https://xlhaw.github.io/tags/esp32/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example</title>
+      <link>https://xlhaw.github.io/tags/example/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Code In</title>
+      <link>https://xlhaw.github.io/tags/google-code-in/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/google-code-in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphviz</title>
+      <link>https://xlhaw.github.io/tags/graphviz/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/graphviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iot</title>
+      <link>https://xlhaw.github.io/tags/iot/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mongoose Os</title>
+      <link>https://xlhaw.github.io/tags/mongoose-os/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/mongoose-os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openwisp</title>
+      <link>https://xlhaw.github.io/tags/openwisp/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/openwisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plan</title>
+      <link>https://xlhaw.github.io/tags/plan/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>https://xlhaw.github.io/tags/plan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

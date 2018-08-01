@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><style>
+body {
+	display: block;
+	--colorBG: "#40e0d0, #ff8c00, #ff0080";background: linear-gradient(to right, var(--colorBG)) !important;
+	
+}
+
+body, body.pushable {
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover !important;
+}
+
+</style><title>
+A brief Introduction to DOT language
+</title><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Leon Xiao" />
+	<meta name="description" content="Free from Restrictions I have been quite obesssed with fancy tools and techniques. Before I encounter with DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. All the software has its charming part and restrictions, but it&amp;rsquo;s annoying to finetune for the position and format for a perfectionist or OD pa. Free yourself from the trival matter, you just need to focus on your own thinking, for,just like markdown help your the we, the dot help your ." />
+<meta name="generator" content="Hugo 0.45" />
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<link rel="canonical" href="https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/" />
+<link rel="alternative" href="/index.xml" title="Leon Xiao&#39;s Blog" type="application/atom+xml"/><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+<style>
+body.pushable {
+	display: block;background: linear-gradient(to right, var(--colorBG)) !important;
+	 ;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/css/site.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css">
+<script>
+	var colorBG =  true 
+	var enabledPost = true
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+</head>
+
+<body><script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;var gradients = [
+	  [],
+	  ['#40e0d0', '#ff8c00', '#ff0080'], 
+	  ['#3e5151', '#decba4'], 
+	  ['#11998e', '#38ef7d'], 
+	  ['#108dc7', '#ef8e38'], 
+	  ['#fc5c7d', '#6a82fb'], 
+	  ['#fc466b', '#3f5efb'], 
+	  ['#c94b4b', '#4b134f'], 
+	  ['#23074d', '#cc5333'] 
+	]
+	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]))
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min)
+	  max = Math.floor(max)
+	  var random
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random
+	      break
+	    }
+	  }
+	  return random
+	}
+
+	function connect(arr) {
+	  var str = ''
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', '
+	    } else {
+	      str += arr[i]
+	    }
+	  }
+	  return str
+	}
+</script><div id="sidebar" class="ui sidebar inverted vertical menu">
+	<section id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
+	<img src="/images/myavatar.jpg">
+</div>
+<h3 class="ui header">Leon Xiao
+	<div class="sub header">A keen maker, programmer and an Instructables author.</div>
+</h3>
+</section><section class="ui attached center aligned inverted segment sidebar-dream-tags">
+<a class="ui label" href="/tags/django" title="django">django</a>
+
+<a class="ui label" href="/tags/dot" title="dot">dot</a>
+
+<a class="ui label" href="/tags/esp32" title="esp32">esp32</a>
+
+<a class="ui label" href="/tags/example" title="example">example</a>
+
+<a class="ui label" href="/tags/google-code-in" title="google-code-in">google-code-in</a>
+
+<a class="ui label" href="/tags/graphviz" title="graphviz">graphviz</a>
+
+<a class="ui label" href="/tags/iot" title="iot">iot</a>
+
+<a class="ui label" href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
+
+<a class="ui label" href="/tags/openwisp" title="openwisp">openwisp</a>
+
+<a class="ui label" href="/tags/plan" title="plan">plan</a>
+
+</section>	
+	
+	<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+		<div class="ui inverted accordion">
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/blogging">blogging</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/gci/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Google Code-in with OpenWISP</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/electronics">electronics</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/mos/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Mongoose OS on ESPer</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/lifestyle">lifestyle</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/new-year-plan/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>New Year Plan 2018</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/programming">programming</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/netjsonconfig/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Testing &#34;django-netjsonconfig&#34;</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/tools">tools</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>A brief Introduction to DOT language</p>
+		</div>
+	</a>
+
+</div>
+
+</div>
+	</section>
+	
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+<p>© 2018 Leon Xiao&#39;s Blog</p>
+    
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></section>
+</div>
+<div class="pusher">
+		<div class="flipper">
+			<div class="front">
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div><div class="item">
+		<a href="/">
+			<i class="inverted big link home icon" title="Home"></i>
+		</a>
+	</div>
+	<div class="item">
+		<a href="/post">
+			<i class="inverted big link archive icon" title="Archive"></i>
+		</a>
+	</div>
+	<div class="item">
+		<a href="/tags">
+			<i class="inverted big link tags icon" title="All Tags"></i>
+		</a>
+	</div>
+	<div class="item">
+		<a href="/categories">
+			<i class="inverted big link cubes icon" title="All Categories"></i>
+		</a>
+    </div>
+	<div class="ui container tablet computer only grid">
+		<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+			<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+		</div>
+	</div>
+	
+</nav>
+
+<div class="ui centered grid">
+	<div class="sixteen wide mobile only column"><div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">
+		<header id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
+	<img src="/images/myavatar.jpg">
+</div>
+<h3 class="ui header">Leon Xiao
+	<div class="sub header">A keen maker, programmer and an Instructables author.</div>
+</h3>
+</header>
+		<div class=" title header-title"><div id="tag-category-pop" class="ui red right corner label">		
+				<i class="hand point icon down"title="Click this to pop tags and categories"></i>		
+			</div></div>
+		<div id="tag-category" class=" content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
+<a class="ui label" href="/tags/django" title="django">django</a>
+
+<a class="ui label" href="/tags/dot" title="dot">dot</a>
+
+<a class="ui label" href="/tags/esp32" title="esp32">esp32</a>
+
+<a class="ui label" href="/tags/example" title="example">example</a>
+
+<a class="ui label" href="/tags/google-code-in" title="google-code-in">google-code-in</a>
+
+<a class="ui label" href="/tags/graphviz" title="graphviz">graphviz</a>
+
+<a class="ui label" href="/tags/iot" title="iot">iot</a>
+
+<a class="ui label" href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
+
+<a class="ui label" href="/tags/openwisp" title="openwisp">openwisp</a>
+
+<a class="ui label" href="/tags/plan" title="plan">plan</a>
+
+</section><section class="ui attached inverted segment dream-categories both flexbox">
+			<div class="inverted accordion">
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/blogging">blogging</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/gci/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Google Code-in with OpenWISP</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/electronics">electronics</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/mos/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Mongoose OS on ESPer</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/lifestyle">lifestyle</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/new-year-plan/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>New Year Plan 2018</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/programming">programming</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/netjsonconfig/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>Testing &#34;django-netjsonconfig&#34;</p>
+		</div>
+	</a>
+
+</div>
+
+<div class="title">
+	<i class="dropdown icon"></i>
+	<a class="link" href="/categories/tools">tools</a>
+</div>
+<div class="content">
+
+	<a class="item" href="https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/">
+		<div>
+			<i class="cocktail icon"></i>
+			<p>A brief Introduction to DOT language</p>
+		</div>
+	</a>
+
+</div>
+
+</div>
+			</section></div>
+		<footer class="ui bottom attached center aligned inverted segment">
+<p>© 2018 Leon Xiao&#39;s Blog</p>
+    
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></footer>
+	</div>
+</div></div>
+	<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+		<section class="ui secondary top attached black segment post-head">
+			<h1 class="post-title">
+				A brief Introduction to DOT language
+			</h1>
+			<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Mar 17, 2018</span></div><div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="4467e5fce8ca078bdcf16fc99906f36f"></a></span></div>
+					<div><span><i class="clock outline icon"></i>2 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Mar 17, 2018</span></div>
+			</div>
+			<hr><div class="toc"><nav id="TableOfContents">
+<ul>
+<li><a href="#free-from-restrictions">Free from Restrictions</a></li>
+</ul>
+</nav></div>
+			
+			
+			<article class="post-content twemoji">
+				
+
+<h1 id="free-from-restrictions">Free from Restrictions&nbsp;<a class="anchor" href="#free-from-restrictions"><i class="small linkify icon"></i></a> </h1>
+
+<p>I have been quite obesssed with fancy tools and techniques. Before I encounter with DOT, I have tried many tools to  reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. All the software has its charming part and restrictions, but it&rsquo;s annoying to finetune for the position and format for a perfectionist or OD pa. Free yourself from the trival matter, you just need to focus on your own thinking, for,just like markdown help your the we, the dot help your .you can edit it anyway with a simple text edit such notpad or vim</p>
+
+<p>The DOT language is really simple, use <strong>-&gt;</strong> symbol to shows the relationship between two objects and to modify any objects by change the value in [].</p>
+
+<pre><code>Object1 -&gt; Object2
+Object[Attribute=value]
+</code></pre>
+
+<p>The way it addresses the complex structures is also easy.  With <strong>|</strong> &amp; <em><strong>{}</strong></em>, different elements are seperated and aggregated hierarchy. Specific label can also be accessed by put index<n> before it.</p>
+
+<pre><code>    Label [shape=record,label=&quot;&lt;n&gt;Label|{angle|distance|float|..}&quot;,labelangle=-60];
+</code></pre>
+
+<p>Find from the document <a href="www.">ojiji</a>
+​</p>
+
+<p>You can even try it on lo from <a href="http://viz-js.com">vis.js</a></p>
+
+<p>for more complicated case,</p>
+
+<p><img src="..\imagesnote.svg" alt="DOT Learning Note" /></p>
+
+<p>Learning by coding.</p>
+
+<p>Here is the code.</p>
+
+<pre><code>digraph DOT {
+compound=true;
+DOT [label=&quot;DOT Languange&quot;]
+subgraph cluster0 {
+label=&quot;Objects&quot;
+Nodes[label=&quot;Node&quot;];
+Edges[label=&quot;Edge&quot;];
+Edges -&gt; Arrowhead;
+Port [shape=record,label=&quot;{{nw|n|ne}|{w|&lt;f0&gt; Port|e}|{sw|s|se}}&quot;,headport=e];
+Nodes -&gt; &quot;Port&quot;:f0;
+Nodes -&gt; Shape;
+Shape [shape=record,label=&quot;{&lt;f0&gt;Shape|{&lt;f1&gt;box|&lt;f2&gt;invtriangle|&lt;f3&gt;ellipse}|{&lt;f4&gt;polygon|&lt;f5&gt;diamond|&lt;f6&gt;triangle}}&quot;];
+}
+DOT -&gt; Edges[label=&quot;Edge&quot;];
+DOT -&gt; {Nodes,Generic,Advance};
+subgraph cluster1 {
+label=&quot;Attributes&quot;
+Advance -&gt; {Font,Label};
+Generic -&gt; Color:n;
+Generic -&gt; Style:n;
+Generic -&gt; Size:n;
+Label [shape=record,label=&quot;&lt;n&gt;Label|{angle|distance|float|..}&quot;,labelangle=-60];
+Color [shape=record,label=&quot;&lt;n&gt;Color|{red|green|blue|..}&quot;,color=blue];
+Style [shape=record,label=&quot;&lt;n&gt;Style|{&lt;f0&gt; dotted |&lt;f1&gt;bold|&lt;f2&gt;filled|..}&quot;,style=filled];
+Size [shape=record,label=&quot;&lt;n&gt;Size|{&lt;f0&gt;height |&lt;f1&gt;width|&lt;f2&gt;weight|&lt;f3&gt;ratio|&lt;f4&gt;..}&quot;,style=bold,weight=0.8];
+Font [shape=record,label=&quot;&lt;n&gt;Font|{name|color|size}&quot;,fontname=arial,fontcolor=Red];
+Label -&gt; Font[arrowhead=none];
+}
+subgraph cluster2 {
+Cluster
+}
+Cluster -&gt; Nodes[ltail=cluster2,lhead=cluster0,style=dotted,arrowhead=none];
+Cluster -&gt; Generic[lhead=cluster1,style=dotted,arrowhead=none];
+Cluster -&gt; triangle[lhead=cluster3,style=dotted,arrowhead=none];
+subgraph cluster3 {
+label=&quot;Instance&quot;;
+box[shape=box];
+ellipse[shape=ellipse];
+polygon[shape=polygon];
+diamond[shape=diamond];
+triangle[shape=triangle];
+color=lightgrey;
+}
+Shape:f1 -&gt; box[label=&quot;dot&quot;,arrowhead=dot,style=dotted];
+Shape:f3 -&gt; ellipse[label=&quot;odot&quot;,arrowhead=odot,style=dotted, tailport=s];
+Shape:f4 -&gt; polygon[label=&quot;inv&quot;,arrowhead=inv,style=dotted,tailport=s];
+Shape:f5 -&gt; diamond[label=&quot;invdot &quot;,arrowhead=invdot,style=dotted,tailport=s];
+Shape:f6 -&gt; triangle[label=&quot;invodot &quot;,arrowhead=invodot,style=dotted];
+Arrowhead -&gt; box [lhead=cluster3,style=dotted,arrowhead=none];
+}
+
+</code></pre>
+
+<p>At you the, it&rsquo;s time to your masterpiece,</p>
+
+<p>The final step is to render your masterpiece, After setup the enviorment variables properly,</p>
+
+<p>tha the the cmd</p>
+
+<pre><code>dot -Tsvg note.gv -o note.svg
+</code></pre>
+
+<p>Last but not the least</p>
+
+<p>The language has done the trivial and dirty part, now is your turn to shine.</p>
+
+<p>That&rsquo;s why many people embrace the open source software.</p>
+
+			</article>
+		</section>
+		<section class="ui secondary attached segment dream-tags">
+<a class="ui label" href="/tags/django" title="django">django</a>
+
+<a class="ui label" href="/tags/dot" title="dot">dot</a>
+
+<a class="ui label" href="/tags/esp32" title="esp32">esp32</a>
+
+<a class="ui label" href="/tags/example" title="example">example</a>
+
+<a class="ui label" href="/tags/google-code-in" title="google-code-in">google-code-in</a>
+
+<a class="ui label" href="/tags/graphviz" title="graphviz">graphviz</a>
+
+<a class="ui label" href="/tags/iot" title="iot">iot</a>
+
+<a class="ui label" href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
+
+<a class="ui label" href="/tags/openwisp" title="openwisp">openwisp</a>
+
+<a class="ui label" href="/tags/plan" title="plan">plan</a>
+
+
+		</section><section class="ui secondary  attached segment share row box"><div class="author"><img class="avatar" src="/images/myavatar.jpg">
+	
+</div>
+<div class="info grow flexbox"><a href="https://twitter.com/xlhaw">
+	
+	<p class="name">Leon Xiao</p></a>
+	
+	<p class="desc">A keen maker, programmer and an Instructables author.</p>		
+</div>
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;A brief Introduction to DOT language &quot; by @xlhaw https:\/\/xlhaw.github.io\/post\/a-brief-introduction-to-dot-language\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+</section>
+		<section class="ui secondary attached segment copyright">
+			
+		</section>
+		<div class="ui secondary bottom attached stacked segment disqus"><div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/xlhaw.github.io\/post\/a-brief-introduction-to-dot-language\/';
+		this.page.identifier = '4467e5fce8ca078bdcf16fc99906f36f';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'xlhaw' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+		
+	</div>
+</div>
+
+			</div>
+			<div class="back"><nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div><div class="item">
+	<a href="https://github.com/xlhaw" target="_blank">
+		<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+	</a>
+</div>
+<div class="item">
+	<a href="mailto:i@xlhaw.com">
+		<i id="ico" class="inverted big link mail icon" title="Email"></i>
+	</a>
+</div>
+<div class="item">
+	<a href="https://twitter.com/xlhaw" target="_blank">
+		<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+	</a>
+</div>
+<div class="item">
+	<a href="https://www.linkedin.com/in/xlhaw" target="_blank">
+		<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
+	</a>
+</div>
+
+</nav>
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments"><div class="ui inverted segment">
+	<article class="twemoji"><h1 id="so-who-am-i">So, Who Am I?</h1>
+
+<hr />
+
+<p>I’m a teenager who likes <strong>writing</strong>, <strong>programming</strong> and <strong>making stuff</strong>. Even setting the title as <strong>Who Am I</strong>  for this article is reminding me of <code>whoami</code> in Linux. I feel the inner urge to contribute something to the Internet because I love writing and I believe posting something online enables users all around the globe to see your work and suggest improvements.</p>
+
+<p>Recently I&rsquo;ve also started taking interest in web designing and hosting the fruitful results of which these site and blogs are! I also make <strong>projects</strong> and share them online at <strong>Instructables</strong>, the link of which has been placed on the home page. Making stuff is just one of the things I love the most.</p>
+
+<p>That’s all that I can think of right now. Hopefully I’ll add something more to this later on. 😅</p>
+
+<p>Curious about me? Use the social links above to check out my profiles or visit <a href="https://utkarshverma.me" target="_blank">my website</a>.</p>
+
+<p>You can also support me on <a href="https://patreon.com/UtkarshVerma" target="_blank">Patreon</a>. I&rsquo;d really appreciate it.</p>
+</article>
+</div></section>
+	</div>
+</div></div>
+		</div>
+	</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script><script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-112332904-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="dsq-count-scr" src="//xlhaw.disqus.com/count.js" async></script>
+
+<script>
+	(function () {
+	  console.log("Twemoji up and making stuff colourful!");
+	  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+		twemoji.parse(b[a]);
+	  }
+	})();
+</script>
+
+</body>
+
+</html>
