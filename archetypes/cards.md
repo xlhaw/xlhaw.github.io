@@ -1,0 +1,1 @@
+---title: {{ replace .TranslationBaseName "-" " " | title }}date: {{ .Date }}lastmod: {{ .Date }}cover: draft: truelink: //enter the link to which this card will redirect toweight:description: ---  <script type="text/javascript"     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">  </script>

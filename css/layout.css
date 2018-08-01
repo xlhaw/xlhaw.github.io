@@ -1,5 +1,0 @@
-#main-wrap {
-    transition: -webkit-filter .4s linear;
-    transition: filter .4s linear;
-    transition: filter .4s linear, -webkit-filter .4s linear;
-}
