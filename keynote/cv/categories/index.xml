@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Leon Xiao&#39;s Res*ume</title>
-    <link>http://xlhaw.com/categories/</link>
+    <link>http://xlhaw.com/keynote/cv/categories/</link>
     <description>Recent content in Categories on Leon Xiao&#39;s Res*ume</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://xlhaw.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xlhaw.com/keynote/cv/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

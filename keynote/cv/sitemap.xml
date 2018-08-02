@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://xlhaw.com/categories/</loc>
+    <loc>http://xlhaw.com/keynote/cv/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlhaw.com/</loc>
+    <loc>http://xlhaw.com/keynote/cv/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://xlhaw.com/tags/</loc>
+    <loc>http://xlhaw.com/keynote/cv/tags/</loc>
     <priority>0</priority>
   </url>
   
