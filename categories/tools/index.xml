@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Leon Xiao&#39;s Blog</title>
-    <link>https://xlhaw.github.io/categories/tools/</link>
+    <link>https://www.xlhaw.com/categories/tools/</link>
     <description>Recent content in Tools on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
     
-	<atom:link href="https://xlhaw.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A brief Introduction to DOT language</title>
-      <link>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</link>
+      <link>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://xlhaw.github.io/post/a-brief-introduction-to-dot-language/</guid>
-      <description>Free from Restrictions I have been quite obesssed with fancy tools and techniques. Before I encounter with DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. All the software has its charming part and restrictions, but it&amp;rsquo;s annoying to finetune for the position and format for a perfectionist or OD pa. Free yourself from the trival matter, you just need to focus on your own thinking, for,just like markdown help your the we, the dot help your .</description>
+      <guid>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</guid>
+      <description>Free from the Restrictions I have been quite obesssed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the oppotunity to free yourself from those trival matters, what you neeed to do is just focus on your own thinking and leave the rest to DOT.</description>
     </item>
     
   </channel>

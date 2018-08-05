@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iot on Leon Xiao&#39;s Blog</title>
-    <link>https://xlhaw.github.io/tags/iot/</link>
+    <link>https://www.xlhaw.com/tags/iot/</link>
     <description>Recent content in Iot on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jan 2018 18:59:43 +0530</lastBuildDate>
     
-	<atom:link href="https://xlhaw.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mongoose OS on ESPer</title>
-      <link>https://xlhaw.github.io/post/mos/</link>
+      <link>https://www.xlhaw.com/post/mos/</link>
       <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
       
-      <guid>https://xlhaw.github.io/post/mos/</guid>
+      <guid>https://www.xlhaw.com/post/mos/</guid>
       <description>Recently I&amp;rsquo;ve got my hands on the craved-for IoT ESP32, thanks to DFRobot, and have been tinkering with it ever since. I&amp;rsquo;m really amazed by it since it packs both Bluetooth and WiFi in a small yet powerful unit. Since I received the MCU rather than the module, so, to use it, I made myself a breakout board named ESPer(because, why not? 😄). Feel free to check out its Instructable over here.</description>
     </item>
     
