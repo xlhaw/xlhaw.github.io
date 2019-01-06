@@ -1,53 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head><style>
-body {
-	display: block;
-	--colorBG: "#40e0d0, #ff8c00, #ff0080";background: linear-gradient(to right, var(--colorBG)) !important;
-	
-}
-
-body, body.pushable {
-	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover !important;
-}
-
-</style><title>
+	<head>
+		<title>
 Hello World
-</title><meta charset="UTF-8">
+</title>
+		<style>
+	body {
+		display: block;
+		--colorBG: "#40e0d0, #ff8c00, #ff0080";
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		
+	}
+
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
 	<meta name="author" content="Leon Xiao" />
-	<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start Create a new post 1  $ hexo new &amp;#34;My New Post&amp;#34;   More info: Writing
-Run server 1  $ hexo server   More info: Server
-Generate static files 1  $ hexo generate   More info: Generating" />
-<meta name="generator" content="Hugo 0.45" />
+	<meta name="description" content="Just a random blog for random stuff, mostly tech-related." />
+
+
+
+<meta name="generator" content="Hugo 0.53" />
+
 
 <link rel="shortcut icon" href="/images/favicon.ico">
 
-<link rel="canonical" href="https://www.xlhaw.com/post/hello-world/" />
-<link rel="alternative" href="/index.xml" title="Leon Xiao&#39;s Blog" type="application/atom+xml"/><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+	<link rel="stylesheet" type="text/css" href="/css/highlight.css">
+
+
+
+
+
+
 <style>
-body.pushable {
-	display: block;background: linear-gradient(to right, var(--colorBG)) !important;
-	 ;
-}
+	body.pushable {
+		display: block;
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		 ;
+	}
 </style>
-<link rel="stylesheet" type="text/css" href="/css/site.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css">
+
+
+
 <script>
 	var colorBG =  true 
-	var enabledPost = true
+	var enabledPost =  true 
+	
 	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
 </script>
-</head>
 
-<body><script>
+	</head>
+
+	<body>
+		<script>
 var prevBgIndex = 0;
-var bodyBgSwitchIndex = 0;var gradients = [
+var bodyBgSwitchIndex = 0;
+
+
+	var gradients = [
 	  [],
 	  ['#40e0d0', '#ff8c00', '#ff0080'], 
 	  ['#3e5151', '#decba4'], 
@@ -57,458 +98,297 @@ var bodyBgSwitchIndex = 0;var gradients = [
 	  ['#fc466b', '#3f5efb'], 
 	  ['#c94b4b', '#4b134f'], 
 	  ['#23074d', '#cc5333'] 
-	]
-	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]))
+	];
+	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]));
+
+
 	function getRandomInt(min, max) {
-	  min = Math.ceil(min)
-	  max = Math.floor(max)
-	  var random
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
 	  while (1) {
-	    random = Math.floor(Math.random() * (max - min)) + min
+	    random = Math.floor(Math.random() * (max - min)) + min;
 	    if (random !== prevBgIndex) {
-	      prevBgIndex = random
-	      break
+	      prevBgIndex = random;
+	      break;
 	    }
 	  }
-	  return random
+	  return random;
 	}
 
 	function connect(arr) {
-	  var str = ''
+	  var str = '';
 	  for (var i = 0; i < arr.length; i++) {
 	    if (i !== arr.length - 1) {
-	      str += arr[i] + ', '
+	      str += arr[i] + ', ';
 	    } else {
-	      str += arr[i]
+	      str += arr[i];
 	    }
 	  }
-	  return str
+	  return str;
 	}
-</script><div id="sidebar" class="ui sidebar inverted vertical menu">
-	<section id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
-	<img src="/images/myavatar.jpg">
+</script>
+
+
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
 </div>
-<h3 class="ui header">Leon Xiao
+
+
+<h3 class="ui header">
+	Leon Xiao
 	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
 </h3>
-</section><section class="ui attached center aligned inverted segment sidebar-dream-tags">
-<a class="ui label" href="/tags/django" title="django">django</a>
 
-<a class="ui label" href="/tags/dot" title="dot">dot</a>
-
-<a class="ui label" href="/tags/esp32" title="esp32">esp32</a>
-
-<a class="ui label" href="/tags/example" title="example">example</a>
-
-<a class="ui label" href="/tags/google-code-in" title="google-code-in">google-code-in</a>
-
-<a class="ui label" href="/tags/graphviz" title="graphviz">graphviz</a>
-
-<a class="ui label" href="/tags/iot" title="iot">iot</a>
-
-<a class="ui label" href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
-
-<a class="ui label" href="/tags/openwisp" title="openwisp">openwisp</a>
-
-<a class="ui label" href="/tags/plan" title="plan">plan</a>
-
-</section>	
-	
-	<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
-		<div class="ui inverted accordion">
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/blogging">blogging</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/gci/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Google Code-in with OpenWISP</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/electronics">electronics</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/mos/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Mongoose OS on ESPer</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/lifestyle">lifestyle</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/new-year-plan/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>New Year Plan 2018</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/programming">programming</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/netjsonconfig/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Testing &#34;django-netjsonconfig&#34;</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/tools">tools</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>A brief Introduction to DOT language</p>
-		</div>
-	</a>
-
-</div>
-
-</div>
 	</section>
+
 	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+
+
+
+
+	
+		<a class="ui label purple " href="/tags/django" title="django">django</a>
+	
+		<a class="ui label blue " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label green " href="/tags/esp32" title="esp32">esp32</a>
+	
+		<a class="ui label purple " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label purple " href="/tags/google-code-in" title="google-code-in">google-code-in</a>
+	
+		<a class="ui label red " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label green " href="/tags/iot" title="iot">iot</a>
+	
+		<a class="ui label yellow " href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
+	
+		<a class="ui label brown " href="/tags/openwisp" title="openwisp">openwisp</a>
+	
+		<a class="ui label pink " href="/tags/plan" title="plan">plan</a>
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/blogging">blogging</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/post/gci/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Google Code-in with OpenWISP</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/electronics">electronics</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/post/mos/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Mongoose OS on ESPer</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/post/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/post/netjsonconfig/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Testing &#34;django-netjsonconfig&#34;</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
 	
 	<section id="footer" class="ui bottom attached center aligned inverted segment">
-<p>© 2018 Leon Xiao&#39;s Blog</p>
-    
-<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></section>
+		
+
+	<p>© 2019 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
 </div>
-<div class="pusher">
-		<div class="flipper">
-			<div class="front">
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+				</div>
+				<div class="back">
+					
 <nav class="ui top secondary menu bar">
 	<div class="item">
 		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
-	</div><div class="item">
-		<a href="/">
-			<i class="inverted big link home icon" title="Home"></i>
-		</a>
-	</div>
-	<div class="item">
-		<a href="/post">
-			<i class="inverted big link archive icon" title="Archive"></i>
-		</a>
-	</div>
-	<div class="item">
-		<a href="/tags">
-			<i class="inverted big link tags icon" title="All Tags"></i>
-		</a>
-	</div>
-	<div class="item">
-		<a href="/categories">
-			<i class="inverted big link cubes icon" title="All Categories"></i>
-		</a>
-    </div>
-	<div class="ui container tablet computer only grid">
-		<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
-			<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
-		</div>
 	</div>
 	
-</nav>
-
-<div class="ui centered grid">
-	<div class="sixteen wide mobile only column"><div class="ui inverted accordion">
-	<div id="header" class="ui inverted segment column box">
-		<header id="author" class="ui top attached center aligned inverted segment"><div class="ui small circular image">
-	<img src="/images/myavatar.jpg">
-</div>
-<h3 class="ui header">Leon Xiao
-	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
-</h3>
-</header>
-		<div class=" title header-title"><div id="tag-category-pop" class="ui red right corner label">		
-				<i class="hand point icon down"title="Click this to pop tags and categories"></i>		
-			</div></div>
-		<div id="tag-category" class=" content"><section class="ui attached center aligned inverted segment dream-tags none flexbox">
-<a class="ui label" href="/tags/django" title="django">django</a>
-
-<a class="ui label" href="/tags/dot" title="dot">dot</a>
-
-<a class="ui label" href="/tags/esp32" title="esp32">esp32</a>
-
-<a class="ui label" href="/tags/example" title="example">example</a>
-
-<a class="ui label" href="/tags/google-code-in" title="google-code-in">google-code-in</a>
-
-<a class="ui label" href="/tags/graphviz" title="graphviz">graphviz</a>
-
-<a class="ui label" href="/tags/iot" title="iot">iot</a>
-
-<a class="ui label" href="/tags/mongoose-os" title="mongoose-os">mongoose-os</a>
-
-<a class="ui label" href="/tags/openwisp" title="openwisp">openwisp</a>
-
-<a class="ui label" href="/tags/plan" title="plan">plan</a>
-
-</section><section class="ui attached inverted segment dream-categories both flexbox">
-			<div class="inverted accordion">
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/blogging">blogging</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/gci/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Google Code-in with OpenWISP</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/electronics">electronics</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/mos/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Mongoose OS on ESPer</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/lifestyle">lifestyle</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/new-year-plan/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>New Year Plan 2018</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/programming">programming</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/netjsonconfig/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>Testing &#34;django-netjsonconfig&#34;</p>
-		</div>
-	</a>
-
-</div>
-
-<div class="title">
-	<i class="dropdown icon"></i>
-	<a class="link" href="/categories/tools">tools</a>
-</div>
-<div class="content">
-
-	<a class="item" href="https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/">
-		<div>
-			<i class="cocktail icon"></i>
-			<p>A brief Introduction to DOT language</p>
-		</div>
-	</a>
-
-</div>
-
-</div>
-			</section></div>
-		<footer class="ui bottom attached center aligned inverted segment">
-<p>© 2018 Leon Xiao&#39;s Blog</p>
-    
-<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p></footer>
-	</div>
-</div></div>
-	<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
-		<section class="ui secondary top attached black segment post-head">
-			<h1 class="post-title">
-				Hello World
-			</h1>
-			<div class="sub header">
-					<div><span><i class="calendar outline icon"></i>Jan 1, 0001</span></div><div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://www.xlhaw.com/post/hello-world/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="149146edb9d37107f2905b865ce6ae17"></a></span></div>
-					<div><span><i class="clock outline icon"></i>1 min read</span></div>
-					<div><span><i class="angle double up icon"></i>Last updated on Jan 1, 0001</span></div>
-			</div>
-			<hr><div class="toc"><nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#quick-start">Quick Start</a>
-<ul>
-<li><a href="#create-a-new-post">Create a new post</a></li>
-<li><a href="#run-server">Run server</a></li>
-<li><a href="#generate-static-files">Generate static files</a></li>
-<li><a href="#deploy-to-remote-sites">Deploy to remote sites</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav></div>
-			
-			
-			<article class="post-content twemoji">
-				
-
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-
-<h2 id="quick-start">Quick Start&nbsp;<a class="anchor" href="#quick-start"><i class="small linkify icon"></i></a> </h2>
-
-<h3 id="create-a-new-post">Create a new post&nbsp;<a class="anchor" href="#create-a-new-post"><i class="small linkify icon"></i></a> </h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo new <span class="s2">&#34;My New Post&#34;</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-
-<h3 id="run-server">Run server&nbsp;<a class="anchor" href="#run-server"><i class="small linkify icon"></i></a> </h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo server</code></pre></td></tr></table>
-</div>
-</div>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-
-<h3 id="generate-static-files">Generate static files&nbsp;<a class="anchor" href="#generate-static-files"><i class="small linkify icon"></i></a> </h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo generate</code></pre></td></tr></table>
-</div>
-</div>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-
-<h3 id="deploy-to-remote-sites">Deploy to remote sites&nbsp;<a class="anchor" href="#deploy-to-remote-sites"><i class="small linkify icon"></i></a> </h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo deploy</code></pre></td></tr></table>
-</div>
-</div>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
-
-			</article>
-		</section>
-		<section class="ui secondary attached segment dream-tags">
-			<span>No Tag</span>
-			
-		</section><section class="ui secondary  attached segment share row box"><div class="author"><img class="avatar" src="/images/myavatar.jpg">
-	
-</div>
-<div class="info grow flexbox"><a href="https://twitter.com/xlhaw">
-	
-	<p class="name">Leon Xiao</p></a>
-	
-	<p class="desc">A clumsy interpreter and a soul nowhere to be placed</p>		
-</div>
-<section class="buttons row box">
-	<div class="facebook none flexbox" href="#" onclick="window.open(
-			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-			'facebook-share-dialog',
-			'width=626,height=436'); return false;">
-		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
-	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Hello World &quot; by @xlhaw https:\/\/www.xlhaw.com\/post\/hello-world\/','_self')">
-		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
-	</div>
-</section>
-</section>
-		<section class="ui secondary attached segment copyright">
-			
-		</section>
-		<div class="ui secondary bottom attached stacked segment disqus"><div id="disqus_thread"></div>
-<script>
-	var disqus_config = function () {
-		this.page.url = 'https:\/\/www.xlhaw.com\/post\/hello-world\/';
-		this.page.identifier = '149146edb9d37107f2905b865ce6ae17';
-	};
-	(function() {
-   	var d = document, s = d.createElement('script');
-   	s.src = 'https://' + 'xlhaw' + '.disqus.com/embed.js';
-   	s.setAttribute('data-timestamp', +new Date());
-   	(d.head || d.body).appendChild(s);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</div>
 		
-	</div>
-</div>
+	
+		
+	
+		
+	
+		
+	
+		
+	
 
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
 			</div>
-			<div class="back"><nav class="ui top secondary menu bar">
-	<div class="item">
-		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
-	</div><div class="item">
-	<a href="https://github.com/xlhaw" target="_blank">
-		<i id="ico" class="inverted big link github icon" title="GitHub"></i>
-	</a>
-</div>
-<div class="item">
-	<a href="mailto:i@xlhaw.com">
-		<i id="ico" class="inverted big link mail icon" title="Email"></i>
-	</a>
-</div>
-<div class="item">
-	<a href="https://twitter.com/xlhaw" target="_blank">
-		<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
-	</a>
-</div>
-<div class="item">
-	<a href="https://www.linkedin.com/in/xlhaw" target="_blank">
-		<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
-	</a>
-</div>
-
+		
+	
+		
+		
+			<div class="item">
+				<a href="mailto:i@xlhaw.com" target="	_blank">
+					<i id="ico" class="inverted big link mail icon" title="Email"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://www.linkedin.com/in/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
 </nav>
+
+
+
 <div class="ui centered grid about">
 	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
-		<section class="ui stacked segments"><div class="ui inverted segment">
-	<article class="twemoji"><h1 id="so-who-am-i">So, Who Am I?</h1>
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="so-who-am-i">So, Who Am I?</h1>
 
 <hr />
 
@@ -522,32 +402,60 @@ Actually I have a hard time to find out what I&rsquo;m really interested in. I w
 <p>You can also support me by below QRcode . I&rsquo;d really appreciate it.</p>
 
 <p><img src="/images/wechat.png" alt="wechat" /></p>
-</article>
-</div></section>
+
+				</article>
+				
+				
+			</div>
+		</section>
 	</div>
-</div></div>
+</div>
+
+				</div>
+			</div>
 		</div>
-	</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		
+
 <script src="/js/site.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script><script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-112332904-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script id="dsq-count-scr" src="//xlhaw.disqus.com/count.js" async></script>
 
-<script>
-	(function () {
-	  console.log("Twemoji up and making stuff colourful!");
-	  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
-		twemoji.parse(b[a]);
-	  }
-	})();
-</script>
 
-</body>
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
 
+
+
+
+
+
+
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-112332904-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
 </html>
