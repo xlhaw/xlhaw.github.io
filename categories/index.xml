@@ -2,57 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Leon Xiao&#39;s Blog</title>
-    <link>https://www.xlhaw.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Jan 2018 10:29:23 +0530</lastBuildDate>
     
-	<atom:link href="https://www.xlhaw.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blogging</title>
-      <link>https://www.xlhaw.com/categories/blogging/</link>
+      <link>/categories/blogging/</link>
       <pubDate>Sat, 13 Jan 2018 10:29:23 +0530</pubDate>
       
-      <guid>https://www.xlhaw.com/categories/blogging/</guid>
+      <guid>/categories/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Electronics</title>
-      <link>https://www.xlhaw.com/categories/electronics/</link>
+      <link>/categories/electronics/</link>
       <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
       
-      <guid>https://www.xlhaw.com/categories/electronics/</guid>
+      <guid>/categories/electronics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lifestyle</title>
-      <link>https://www.xlhaw.com/categories/lifestyle/</link>
-      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      <link>/categories/lifestyle/</link>
+      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/categories/lifestyle/</guid>
+      <guid>/categories/lifestyle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>/categories/notes/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://www.xlhaw.com/categories/programming/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      <link>/categories/programming/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/categories/programming/</guid>
+      <guid>/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>https://www.xlhaw.com/categories/tools/</link>
-      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      <link>/categories/tools/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/categories/tools/</guid>
+      <guid>/categories/tools/</guid>
       <description></description>
     </item>
     

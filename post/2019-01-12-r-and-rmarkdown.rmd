@@ -1,0 +1,104 @@
+---
+title: R & RMarkdown Quick Start
+author: Leon Xiao
+date: '2019-01-12'
+slug: rmad-rmd
+categories: ['Programming','Notes']
+tags: ['R','R Markdown']
+lastmod: '2019-01-12T17:54:26+08:00'
+cover: /images/default1.jpg
+draft: yes
+description: ~
+---
+
+# Introduction
+
+
+## R Vs Pandas/Python
+
+library() source(.R)  ~ import
+getwd()   ~ os.getcwd()
+setwd('/') ~ os.chdir('\\')
+df <- read.csv(path)   ~ df=pd.read_csv(path)
+
+unique(df$col)   ~ df.col.unique()
+summary(df$col)  ~ df.col.describe()
+sum  ~ sum
+cor(df[,c('a','b')]) ~df[['a','b']].corr()
+%in%   ~   isin() 
+subset(df,a=='a'&b='b')  ~  df[(df.a=='a')&(df.b=='b')]
+%>% 
+length(df$col)   ~ df.col.shape
+merged = df1.merge(df2, on='id') ~  merged=df1.merge(df2,on='id')
+?module   ~ help(module)
+
+
+
+## Data Structure
+c/list/array/matrix/factor/data.frame
+factor() behave like set() in python
+
+## Control Flow
+function(input){}
+for (indx in start:end){}
+if (cond) {} else {}
+ifelse(cond,ifyes,ifno)
+switch(,do1,do2,...)
+
+
+apply(data,*arg,function),lapply,mapply
+apply/t/s/l/m
+
+
+Plotting
+data() -> barplot() 
+
+
+df[df$column,3] ~ df.loc['column',3]
+
+
+misc
+debug/stop/warning/message/traceback/browser
+miscellaneous
+
+
+## R Markdown & Blogdown
+
+n
+
+Structure:
+index.Rmd
+01-intro.Rmd
+...
+05-end.Rmd
+not numbered heading
+```# Preface {-}```
+part title
+```# (PART) Part I {-} ```
+all chapters after (APPENDIX) are appendices
+```# (APPENDIX) Appendix {-} ```
+
+
+
+Addins:
+
+blogdown:::new_post_addin()
+blogdown:::insert_image_addin()
+blogdown:::serve_site()
+new_post(title='') ~ new_content(path = 'post/')
+serve_site()
+
+
+
+
+componnents
+
+knitr::kable(caption,booktabs)
+knitr::include_app()
+knitr::include_url()
+
+### bookdown
+bookdown::render_book()
+render_book()
+preview_chapter()
+serve_book()
