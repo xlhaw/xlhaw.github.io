@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leon Xiao&#39;s Blog</title>
-    <link>/posts/</link>
+    <link>https://www.xlhaw.com/posts/</link>
     <description>Recent content in Posts on Leon Xiao&#39;s Blog</description>
     <meta name="generator" content="Hugo 0.53" />
     <language>en-us</language>
     
-        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xlhaw.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/posts/data/html5-unsupported/</link>
+      <link>https://www.xlhaw.com/posts/data/html5-unsupported/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/data/html5-unsupported/</guid>
+      <guid>https://www.xlhaw.com/posts/data/html5-unsupported/</guid>
       <description>Update your Web browserbody {background: #fff;}.container {background: url(html5.png) no-repeat;position: absolute;width: 405px;height: 100px;top: 50%;margin-top: -102px;left: 50%;margin-left: -231px;}.title {left: 111px;width: 290px;height: 20px;font-family: Arial;font-size: 30px;color: #000;position: absolute;line-height: 28px;top: -1px;}.message {font-family: Arial;font-size: 12px;color: #4b4b4b;line-height: 16px;padding-top: 15px;padding-left: 1px;}Unsupported browserThe HTML5 content is not supported by</description>
     </item>
     
     <item>
       <title></title>
-      <link>/posts/gci/</link>
+      <link>https://www.xlhaw.com/posts/gci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/gci/</guid>
+      <guid>https://www.xlhaw.com/posts/gci/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/posts/jkj/</link>
+      <link>https://www.xlhaw.com/posts/jkj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/jkj/</guid>
+      <guid>https://www.xlhaw.com/posts/jkj/</guid>
       <description>SDQbody {background-color:#ced1d3;}#spr0_425562 {display:none;}(function() {var userAgent = navigator.userAgent.toLowerCase();var useMobilePlayer = userAgent.indexOf(&#34;iemobile&#34;) = 0);if (useMobilePlayer) {var insideMobilePlayer = userAgent.indexOf(&#34;ismobile&#34;) = 0 || location.hash.length  0;if (!insideMobilePlayer) {location.replace(&#34;ismplayer.html&#34; + location.search);}}})();#playerView {position:relative;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;}#playerView * {position:absolute;}#preloader {width: 50px;height: 50px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;border-radius: 10px;background-color: rgba(0, 0, 0, 0.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/posts/mos/</link>
+      <link>https://www.xlhaw.com/posts/mos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/mos/</guid>
+      <guid>https://www.xlhaw.com/posts/mos/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/posts/netjsonconfig/</link>
+      <link>https://www.xlhaw.com/posts/netjsonconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/netjsonconfig/</guid>
+      <guid>https://www.xlhaw.com/posts/netjsonconfig/</guid>
       <description></description>
     </item>
     
