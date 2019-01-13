@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>F on Leon Xiao&#39;s Blog</title>
+    <link>/tags/f/</link>
+    <description>Recent content in F on Leon Xiao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/f/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A few word</title>
+      <link>/posts/yet-another-plan/</link>
+      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
+      
+      <guid>/posts/yet-another-plan/</guid>
+      <description>Writing is your weakness since you re. You&amp;rsquo;re never good at expressing your idea. Make it useful.</description>
+    </item>
+    
+  </channel>
+</rss>

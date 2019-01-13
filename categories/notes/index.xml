@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Leon Xiao&#39;s Blog</title>
+    <link>/categories/notes/</link>
+    <description>Recent content in Notes on Leon Xiao&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/rmad-rmd/</guid>
+      <description>IntroductionR Vs Pandas/Pythonlibrary() source(.R) ~ import getwd() ~ os.getcwd() setwd(‘/’) ~ os.chdir(‘\’) df &amp;lt;- read.csv(path) ~ df=pd.read_csv(path)
+unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum cor(df[,c(‘a’,‘b’)]) ~df[[‘a’,‘b’]].corr() %in% ~ isin() subset(df,a==‘a’&amp;amp;b=‘b’) ~ df[(df.a==‘a’)&amp;amp;(df.b==‘b’)] %&amp;gt;% length(df$col) ~ df.col.shape merged = df1.merge(df2, on=‘id’) ~ merged=df1.merge(df2,on=‘id’) ?module ~ help(module)
+Data Structurec/list/array/matrix/factor/data.frame factor() behave like set() in python
+Control Flowfunction(input){} for (indx in start:end){} if (cond) {} else {} ifelse(cond,ifyes,ifno) switch(,do1,do2,…)</description>
+    </item>
+    
+    <item>
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/posts/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rmad-rmd/</guid>
+      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
+    </item>
+    
+  </channel>
+</rss>

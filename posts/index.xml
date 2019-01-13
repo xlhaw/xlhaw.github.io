@@ -2,57 +2,106 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leon Xiao&#39;s Blog</title>
-    <link>https://www.xlhaw.com/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Leon Xiao&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <meta name="generator" content="Hugo 0.53" />
     <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.xlhaw.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/data/html5-unsupported/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>A few word</title>
+      <link>/posts/yet-another-plan/</link>
+      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/posts/data/html5-unsupported/</guid>
-      <description>Update your Web browserbody {background: #fff;}.container {background: url(html5.png) no-repeat;position: absolute;width: 405px;height: 100px;top: 50%;margin-top: -102px;left: 50%;margin-left: -231px;}.title {left: 111px;width: 290px;height: 20px;font-family: Arial;font-size: 30px;color: #000;position: absolute;line-height: 28px;top: -1px;}.message {font-family: Arial;font-size: 12px;color: #4b4b4b;line-height: 16px;padding-top: 15px;padding-left: 1px;}Unsupported browserThe HTML5 content is not supported by</description>
+      <guid>/posts/yet-another-plan/</guid>
+      <description>New Year Plan 2018</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/gci/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/posts/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/posts/gci/</guid>
-      <description></description>
+      <guid>/posts/rmad-rmd/</guid>
+      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/jkj/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Quarterly Review</title>
+      <link>/posts/quarterly_review/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/posts/jkj/</guid>
-      <description>SDQbody {background-color:#ced1d3;}#spr0_425562 {display:none;}(function() {var userAgent = navigator.userAgent.toLowerCase();var useMobilePlayer = userAgent.indexOf(&#34;iemobile&#34;) = 0);if (useMobilePlayer) {var insideMobilePlayer = userAgent.indexOf(&#34;ismobile&#34;) = 0 || location.hash.length  0;if (!insideMobilePlayer) {location.replace(&#34;ismplayer.html&#34; + location.search);}}})();#playerView {position:relative;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;}#playerView * {position:absolute;}#preloader {width: 50px;height: 50px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;border-radius: 10px;background-color: rgba(0, 0, 0, 0.</description>
+      <guid>/posts/quarterly_review/</guid>
+      <description>Quarterly Review</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/mos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>A brief Introduction to DOT language</title>
+      <link>/posts/a-brief-introduction-to-dot-language/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/posts/mos/</guid>
-      <description></description>
+      <guid>/posts/a-brief-introduction-to-dot-language/</guid>
+      <description>A brief Introduction to DOT language </description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/netjsonconfig/</link>
+      <title>New Year Plan 2018</title>
+      <link>/posts/new-year-plan/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>/posts/new-year-plan/</guid>
+      <description>New Year Plan 2018</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>/posts/hugoisforlovers/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>/posts/hugoisforlovers/</guid>
+      <description>A quick read on how to get started with Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Testing &#34;django-netjsonconfig&#34;</title>
+      <link>/posts/netjsonconfig/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>/posts/netjsonconfig/</guid>
+      <description>The challenges which I faced while installing and using **django-netjsonconfig**. </description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-a-new-theme/</guid>
+      <description>A tutorial on how to create a Hugo theme.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goisforlovers/</guid>
+      <description>An introduction to Hugo, a static site generator.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/posts/netjsonconfig/</guid>
-      <description></description>
+      <guid>/posts/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start Create a new post 1  $ hexo new &amp;#34;My New Post&amp;#34;   More info: Writing
+Run server 1  $ hexo server   More info: Server
+Generate static files 1  $ hexo generate   More info: Generating</description>
     </item>
     
   </channel>

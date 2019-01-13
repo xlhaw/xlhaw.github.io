@@ -2,30 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leon Xiao&#39;s Blog</title>
-    <link>https://www.xlhaw.com/</link>
+    <link>/</link>
     <description>Recent content on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2018 23:21:51 +0530</lastBuildDate>
     
-	<atom:link href="https://www.xlhaw.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Resume</title>
+      <link>/cards/cv/</link>
+      <pubDate>Tue, 30 Jan 2018 23:21:51 +0530</pubDate>
+      
+      <guid>/cards/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A few word</title>
+      <link>/posts/yet-another-plan/</link>
+      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
+      
+      <guid>/posts/yet-another-plan/</guid>
+      <description>Writing is your weakness since you re. You&amp;rsquo;re never good at expressing your idea. Make it useful.</description>
+    </item>
+    
+    <item>
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/rmad-rmd/</guid>
+      <description>IntroductionR Vs Pandas/Pythonlibrary() source(.R) ~ import getwd() ~ os.getcwd() setwd(‘/’) ~ os.chdir(‘\’) df &amp;lt;- read.csv(path) ~ df=pd.read_csv(path)
+unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum cor(df[,c(‘a’,‘b’)]) ~df[[‘a’,‘b’]].corr() %in% ~ isin() subset(df,a==‘a’&amp;amp;b=‘b’) ~ df[(df.a==‘a’)&amp;amp;(df.b==‘b’)] %&amp;gt;% length(df$col) ~ df.col.shape merged = df1.merge(df2, on=‘id’) ~ merged=df1.merge(df2,on=‘id’) ?module ~ help(module)
+Data Structurec/list/array/matrix/factor/data.frame factor() behave like set() in python
+Control Flowfunction(input){} for (indx in start:end){} if (cond) {} else {} ifelse(cond,ifyes,ifno) switch(,do1,do2,…)</description>
+    </item>
+    
+    <item>
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/posts/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rmad-rmd/</guid>
+      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
+    </item>
+    
+    <item>
+      <title>Quarterly Review</title>
+      <link>/posts/quarterly_review/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
+      
+      <guid>/posts/quarterly_review/</guid>
+      <description> Frankly speaking, you have set a bunch of target but actually you haven&amp;rsquo;t made any progress at all. Now you have to narrow down your objectives.
+Progress Wishlist </description>
+    </item>
+    
+    <item>
       <title>A brief Introduction to DOT language</title>
-      <link>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</link>
+      <link>/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</guid>
+      <guid>/posts/a-brief-introduction-to-dot-language/</guid>
       <description>Free from the Restrictions I have been quite obesssed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the oppotunity to free yourself from those trival matters, what you neeed to do is just focus on your own thinking and leave the rest to DOT.</description>
     </item>
     
     <item>
       <title>New Year Plan 2018</title>
-      <link>https://www.xlhaw.com/post/new-year-plan/</link>
+      <link>/posts/new-year-plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/post/new-year-plan/</guid>
+      <guid>/posts/new-year-plan/</guid>
       <description>Say hi,say bye!
 Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.
 Cliche as always. I don&amp;rsquo;t recall how much blogs I have created before.But I&amp;rsquo;m sure this blog will last as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.
@@ -33,103 +82,73 @@ Criteria  Forget about yourself, don&amp;rsquo;t critize and judge your past.</d
     </item>
     
     <item>
-      <title>Mongoose OS on ESPer</title>
-      <link>https://www.xlhaw.com/post/mos/</link>
+      <title>Getting Started with Hugo</title>
+      <link>/posts/hugoisforlovers/</link>
       <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
       
-      <guid>https://www.xlhaw.com/post/mos/</guid>
-      <description>Recently I&amp;rsquo;ve got my hands on the craved-for IoT ESP32, thanks to DFRobot, and have been tinkering with it ever since. I&amp;rsquo;m really amazed by it since it packs both Bluetooth and WiFi in a small yet powerful unit. Since I received the MCU rather than the module, so, to use it, I made myself a breakout board named ESPer(because, why not? 😄). Feel free to check out its Instructable over here.</description>
+      <guid>/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
     <item>
       <title>Testing &#34;django-netjsonconfig&#34;</title>
-      <link>https://www.xlhaw.com/post/netjsonconfig/</link>
+      <link>/posts/netjsonconfig/</link>
       <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
       
-      <guid>https://www.xlhaw.com/post/netjsonconfig/</guid>
+      <guid>/posts/netjsonconfig/</guid>
       <description>A task came up in Google Code-in which asked me to install the django-netjsonconfig module by OpenWISP. Furthermore, I&amp;rsquo;m also supposed to share the challenges I faced during the set-up process as a sort of feedback. I&amp;rsquo;ll be trying be concise in this post so, without further ado, I&amp;rsquo;m beginning with this post.
 Installing &amp;ldquo;django-netjsonconfig&amp;rdquo; The installation instructions for this this module have been well-documented on its GitHub repository. So I began the installation by creating a Python 2.</description>
     </item>
     
     <item>
-      <title>Google Code-in with OpenWISP</title>
-      <link>https://www.xlhaw.com/post/gci/</link>
-      <pubDate>Sat, 13 Jan 2018 10:29:23 +0530</pubDate>
+      <title>Creating a New Theme</title>
+      <link>/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/post/gci/</guid>
-      <description>Recently I&amp;rsquo;ve been participating in Google Code-in which is Google&amp;rsquo;s initiative to introduce young minds to the concept of FOSS, that is Free or Open-Source Softwares. This post is for sharing my experiences with GCI, as the title suggests. So let&amp;rsquo;s just get on it.
-It all began while I was returning from an outing on 5 December, 2017 and was searching the internet for Google Science Fair to check if I could participate in it or not.</description>
+      <guid>/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.xlhaw.com/404/</link>
+      <link>/404/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/404/</guid>
+      <guid>/404/</guid>
       <description> Error 404: Page Not Found Oopsie! It seems that the page that you&amp;rsquo;re trying to access doesn&amp;rsquo;t exist. 😟 If you&amp;rsquo;re sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page. </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.xlhaw.com/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/about/</guid>
+      <guid>/about/</guid>
       <description>So, Who Am I? I’m a guy from China who likes internet, programming and new stuffs. Actually I have a hard time to find out what I&amp;rsquo;m really interested in. I was major in applied chemistry and studied hetergenous catalysis when I was in graduate school. Though 7 years&amp;rsquo; endeavour on chemistry doesn&amp;rsquo;t promise an ideal job at all. I began my career in opto-electronics industry and accidentally got into the semiconductor industry, far away from where I started.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/data/html5-unsupported/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/data/html5-unsupported/</guid>
-      <description>Update your Web browserbody {background: #fff;}.container {background: url(html5.png) no-repeat;position: absolute;width: 405px;height: 100px;top: 50%;margin-top: -102px;left: 50%;margin-left: -231px;}.title {left: 111px;width: 290px;height: 20px;font-family: Arial;font-size: 30px;color: #000;position: absolute;line-height: 28px;top: -1px;}.message {font-family: Arial;font-size: 12px;color: #4b4b4b;line-height: 16px;padding-top: 15px;padding-left: 1px;}Unsupported browserThe HTML5 content is not supported by</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/gci/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/gci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/jkj/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/jkj/</guid>
-      <description>SDQbody {background-color:#ced1d3;}#spr0_425562 {display:none;}(function() {var userAgent = navigator.userAgent.toLowerCase();var useMobilePlayer = userAgent.indexOf(&#34;iemobile&#34;) = 0);if (useMobilePlayer) {var insideMobilePlayer = userAgent.indexOf(&#34;ismobile&#34;) = 0 || location.hash.length  0;if (!insideMobilePlayer) {location.replace(&#34;ismplayer.html&#34; + location.search);}}})();#playerView {position:relative;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;}#playerView * {position:absolute;}#preloader {width: 50px;height: 50px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;border-radius: 10px;background-color: rgba(0, 0, 0, 0.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/mos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/mos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.xlhaw.com/posts/netjsonconfig/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/netjsonconfig/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hello World</title>
-      <link>https://www.xlhaw.com/post/hello-world/</link>
+      <link>/posts/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/post/hello-world/</guid>
+      <guid>/posts/hello-world/</guid>
       <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick Start Create a new post 1  $ hexo new &amp;#34;My New Post&amp;#34;   More info: Writing
 Run server 1  $ hexo server   More info: Server

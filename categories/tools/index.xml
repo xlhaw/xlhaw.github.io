@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Leon Xiao&#39;s Blog</title>
-    <link>https://www.xlhaw.com/categories/tools/</link>
+    <link>/categories/tools/</link>
     <description>Recent content in Tools on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 20:58:30 +0000</lastBuildDate>
     
-	<atom:link href="https://www.xlhaw.com/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Quarterly Review</title>
+      <link>/posts/quarterly_review/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
+      
+      <guid>/posts/quarterly_review/</guid>
+      <description> Frankly speaking, you have set a bunch of target but actually you haven&amp;rsquo;t made any progress at all. Now you have to narrow down your objectives.
+Progress Wishlist </description>
+    </item>
+    
+    <item>
       <title>A brief Introduction to DOT language</title>
-      <link>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</link>
+      <link>/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>https://www.xlhaw.com/post/a-brief-introduction-to-dot-language/</guid>
+      <guid>/posts/a-brief-introduction-to-dot-language/</guid>
       <description>Free from the Restrictions I have been quite obesssed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the oppotunity to free yourself from those trival matters, what you neeed to do is just focus on your own thinking and leave the rest to DOT.</description>
     </item>
     
