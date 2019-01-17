@@ -1,0 +1,146 @@
+---
+title: "Create Wafer Map with R & Python"
+author: "Leon Xiao"
+date: '2019-01-17'
+cover: /images/default1.jpg
+description: null
+draft: no
+lastmod: '2019-01-13T17:54:26+08:00'
+slug: wafermap
+tags:
+- R
+- Python
+- Heatmap
+categories:
+- Programming
+- Visualization
+---
+
+
+
+
+
+Just start the journey of R, I can't help to apply this to solve real world problems.
+about over 70,000 products in one wafer, to find if any anormal.
+basic statistic method is not enough.
+pattern, as common ring and moon pattern.
+
+Before I , I used python/seaborn to create wafer map to check the uniformity of. It tka. I just put the code here.
+
+
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sb
+data=pd.read_csv('C:/Users/Leon/Documents/data.csv')
+data.set_index(['ROW','COL'],inplace=True)
+fig, ax = plt.subplots(1, 1)
+center=data.mean()
+sigma=data.std()
+sb.heatmap(data['DATA'].unstack(level=1),vmax=center+3*sigma,vmin=center-3*sigma,cmap="jet",robust=True,ax=ax)
+plt.tight_layout()
+```
+
+![Heatmap by Seaborn](/posts/wafer-map_files/Figure_1-2.png)
+
+
+## Introduction
+
+
+## stats::heatmap
+
+
+
+## ggplot2
+
+
+df <- read.csv('data.csv',row.names="MAP_ROW")
+
+It's a for visualization
+It's may not look so bad if all packages are well-documented.
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+but it still looks to messy.
+
+still not good enough
+
+install.packages('pheatmap')
+
+but 
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+head(df) df.head()
+save(df,file = 'heatmap.RData')
+
+one more thing, into interactive 
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+heatmap.2(as.matrix(df))
+
+
+```{r}
+library(plotly)
+df <- read.csv('C:/Users/Leon/Documents/data.csv')
+head(df)
+palette <- colorRampPalette(c("darkblue", "blue", "lightblue1",
+                              "green","yellow", "red", "darkred"))
+plot_ly(data=df,x=~COL,y=~ROW,z=~DATA,type='heatmap',width = 600, height = 500,colorscale='Jet')
+```
+
+
+tab/info/value/Box
+tab/task/menuItem
+```{r}
+library(plotly)
+df <- read.csv('C:/Users/Leon/Documents/data.csv')
+head(df)
+palette <- colorRampPalette(c("darkblue", "blue", "lightblue1",
+                              "green","yellow", "red", "darkred"))
+plot_ly(data=df,x=~COL,y=~ROW,z=~DATA,type='heatmap',width = 600, height = 500,colors = palette(50))
+```
+df <- read.csv('D:/Temp/Python/pcm.csv',row.names="MAP_ROW")
+df[is.na(df)] <- 0
+heatmap(as.matrix(df),Colv = NA, scale = "column",Rowv=NA)
+plot_ly(data=df,type='heatmap',z=as.matrix(df))
+
+
+data <- as.matrix(df)
+data=apply(data, 2, function(x){x/mean(x)})
+
+that's what you need
+
+cluster can't handle NA/Nan/Inf value, hence 
+
+```{r}
+library(pheatmap)
+pheatmap(as.matrix(df),show_colnames = FALSE,show_rownames = FALSE,na_col = 'white',cluster_rows = FALSE,cluster_cols = FALSE)
+jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
+
+```
+
+
+fix x,y scale
+
+
+
+```
+# Preview the UI in the console
+shinyApp(ui = ui, server = function(input, output) { })
+```

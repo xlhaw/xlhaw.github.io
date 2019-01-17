@@ -24,20 +24,22 @@ I knew the R language long time ago. At around 2009, I started to learn the basi
 
   
 
-| R                                | Python                        |
-| -------------------------------- | ----------------------------- |
-| library() source(.R)             | import                        |
-| getwd()                          | os.getcwd()                   |
-| setwd('/')                       | os.chdir('\\')                |
-| df <- read.csv(path)             | df=pd.read_csv(path)          |
-| cor(df[,c('a','b')])             | df[['a','b']].corr()          |
-| summary(df$col)                  | df.col.describe()             |
-| %in%                             | isin()                        |
-| length(df$col)                   | df.col.shape                  |
-| subset(df,a=='a'&b='b')          | df[(df.a=='a')&(df.b=='b')]   |
-| ?module ,  ??function            | help(module)                  |
-| merged = df1.merge(df2, on='id') | merged=df1.merge(df2,on='id') |
-| sum/unique                       | sum/unique                    |
+| R                                               | Python                        |
+| ----------------------------------------------- | ----------------------------- |
+| library() source(.R)                            | import                        |
+| getwd()                                         | os.getcwd()                   |
+| setwd('/')                                      | os.chdir('\\')                |
+| df <- read.csv(path)                            | df=pd.read_csv(path)          |
+| cor(df[,c('a','b')])                            | df[['a','b']].corr()          |
+| summary(df$col)                                 | df.col.describe()             |
+| %in%                                            | isin()                        |
+| length(df$col)                                  | df.col.shape                  |
+| subset(df,a=='a'&b='b')                         | df[(df.a=='a')&(df.b=='b')]   |
+| ?module ,  ??function                           | help(module)                  |
+| merged <- merge(df1, df2, by='id')  /by.x, by.y | merged=df1.merge(df2,on='id') |
+| concat=rbind(df1,df2)                           | concat=([df1,df2])            |
+|                                                 |                               |
+| sum/unique                                      | sum/unique                    |
 
 
 
