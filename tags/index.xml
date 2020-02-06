@@ -6,31 +6,13 @@
     <description>Recent content in Tags on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2018 18:59:43 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>/tags/development/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Django</title>
-      <link>/tags/django/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dot</title>
+      <title>dot</title>
       <link>/tags/dot/</link>
       <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
       
@@ -39,7 +21,7 @@
     </item>
     
     <item>
-      <title>Example</title>
+      <title>example</title>
       <link>/tags/example/</link>
       <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
       
@@ -48,47 +30,11 @@
     </item>
     
     <item>
-      <title>F</title>
+      <title>f</title>
       <link>/tags/f/</link>
       <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
       
       <guid>/tags/f/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>/tags/go/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>/tags/golang/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Code In</title>
-      <link>/tags/google-code-in/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/google-code-in/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Graphviz</title>
-      <link>/tags/graphviz/</link>
-      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
-      
-      <guid>/tags/graphviz/</guid>
       <description></description>
     </item>
     
@@ -98,33 +44,6 @@
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/heatmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Openwisp</title>
-      <link>/tags/openwisp/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/openwisp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plan</title>
-      <link>/tags/plan/</link>
-      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
-      
-      <guid>/tags/plan/</guid>
       <description></description>
     </item>
     
@@ -156,7 +75,88 @@
     </item>
     
     <item>
-      <title>Templates</title>
+      <title>graphviz</title>
+      <link>/tags/graphviz/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
+      
+      <guid>/tags/graphviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plan</title>
+      <link>/tags/plan/</link>
+      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
+      
+      <guid>/tags/plan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>/tags/development/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>/tags/go/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>/tags/golang/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>/tags/django/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google code in</title>
+      <link>/tags/google-code-in/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>/tags/google-code-in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openwisp</title>
+      <link>/tags/openwisp/</link>
+      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
+      
+      <guid>/tags/openwisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>templates</title>
       <link>/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
@@ -165,7 +165,7 @@
     </item>
     
     <item>
-      <title>Themes</title>
+      <title>themes</title>
       <link>/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       

@@ -49,7 +49,7 @@ unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/rmad-rmd/</guid>
-      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
+      <description>R &amp;amp; RMarkdown, A Short Note I knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
     </item>
     
   </channel>

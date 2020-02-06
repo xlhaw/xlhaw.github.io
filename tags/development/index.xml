@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on Leon Xiao&#39;s Blog</title>
+    <title>development on Leon Xiao&#39;s Blog</title>
     <link>/tags/development/</link>
-    <description>Recent content in Development on Leon Xiao&#39;s Blog</description>
+    <description>Recent content in development on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jan 2018 18:59:43 +0530</lastBuildDate>

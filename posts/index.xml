@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leon Xiao&#39;s Blog</title>
     <link>/posts/</link>
     <description>Recent content in Posts on Leon Xiao&#39;s Blog</description>
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.55.3" />
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
     
@@ -18,6 +17,17 @@
       
       <guid>/posts/yet-another-plan/</guid>
       <description>New Year Plan 2018</description>
+    </item>
+    
+    <item>
+      <title>Create interactive CV with R</title>
+      <link>/posts/new/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/new/</guid>
+      <description>That&amp;rsquo;s not good enough, I&amp;rsquo;m speechless.
+How to turn your interests/hobbies into profits? You can&amp;rsquo;t stay at a company forever, you , now use your knowledge and try build your masterplan You have try a lot of cloud service, free is free at all, it consume your time and energy The problem seems in that you don&amp;rsquo;t have to record the even the most trivial mindset
+When you put your on</description>
     </item>
     
     <item>
@@ -46,7 +56,7 @@ Before I , I used python/seaborn to create wafer map to check the uniformity of.
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/rmad-rmd/</guid>
-      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
+      <description>R &amp;amp; RMarkdown, A Short Note I knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
     </item>
     
     <item>

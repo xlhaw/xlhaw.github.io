@@ -17,9 +17,6 @@ categories:
 ---
 
 
-
-
-
 Just start the journey of R, I can't help to apply this to solve real world problems.
 about over 70,000 products in one wafer, to find if any anormal.
 basic statistic method is not enough.
@@ -29,7 +26,7 @@ Before I , I used python/seaborn to create wafer map to check the uniformity of.
 
 
 
-```python
+```{python}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
@@ -40,13 +37,14 @@ center=data.mean()
 sigma=data.std()
 sb.heatmap(data['DATA'].unstack(level=1),vmax=center+3*sigma,vmin=center-3*sigma,cmap="jet",robust=True,ax=ax)
 plt.tight_layout()
+plt.show()
 ```
 
 ![Heatmap by Seaborn](/posts/wafer-map_files/Figure_1-2.png)
-
+![d](/posts/wafer-map_files/Figure_1-2.png)
 
 ## Introduction
-
+ f
 
 ## stats::heatmap
 
@@ -84,6 +82,12 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
+```{python}
+
+print('hello')
+
+```
+
 head(df) df.head()
 save(df,file = 'heatmap.RData')
 
@@ -93,6 +97,21 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 
 heatmap.2(as.matrix(df))
+
+```{r}
+library(ggplot2)
+df <- read.csv('C:/Users/Leon/Documents/data.csv')
+# define jet colormap
+jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
+require(dplyr)
+#df <- df %>% mutate(ROW = factor(ROW), ROW = factor(ROW, levels = rev(levels(ROW))))
+ggplot(df,aes(x=COL,y=ROW,fill=DATA)) + geom_tile() + scale_fill_gradientn(colours = jet.colors(7)) +scale_y_reverse()
+#ggplot(df,aes(x=COL,y=reorder(ROW,desc(ROW)),fill=DATA)) + geom_tile() + scale_fill_gradientn(colours = jet.colors(7))
+# use the jet colormap
+
+```
+
+
 
 
 ```{r}
@@ -130,8 +149,13 @@ cluster can't handle NA/Nan/Inf value, hence
 
 ```{r}
 library(pheatmap)
-pheatmap(as.matrix(df),show_colnames = FALSE,show_rownames = FALSE,na_col = 'white',cluster_rows = FALSE,cluster_cols = FALSE)
+#mat <- rpivotTable(df,rows = ~ROW,cols=~COL,vals=~DATA)
+#mat <- melt(df,id=c('COL','ROW'))
+mat <- as.matrix(spread(df,COL,DATA))
 jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
+breaksList = seq(60, 90, by =4)
+pheatmap(mat,show_colnames = FALSE,show_rownames = FALSE,na_col = 'white',cluster_rows = FALSE,cluster_cols = FALSE,color=jet.colors(7),breaks=breaksList)
+#mat <- melt(df,id=c('COL','ROW'))
 
 ```
 
