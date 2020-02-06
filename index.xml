@@ -6,7 +6,11 @@
     <description>Recent content on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
+=======
+    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
+>>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
     
 	<atom:link href="https://www.xlhaw.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,8 +20,53 @@
       <link>https://www.xlhaw.com/cards/cv/</link>
       <pubDate>Tue, 30 Jan 2018 23:21:51 +0530</pubDate>
       
+<<<<<<< HEAD
       <guid>https://www.xlhaw.com/cards/cv/</guid>
       <description>What&amp;rsquo;s your legacy</description>
+=======
+      <guid>/cards/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A few word</title>
+      <link>/posts/yet-another-plan/</link>
+      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
+      
+      <guid>/posts/yet-another-plan/</guid>
+      <description>Writing is your weakness since you re. You&amp;rsquo;re never good at expressing your idea. Make it useful.</description>
+    </item>
+    
+    <item>
+      <title>Create interactive CV with R</title>
+      <link>/posts/new/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/new/</guid>
+      <description>That&amp;rsquo;s not good enough, I&amp;rsquo;m speechless.
+How to turn your interests/hobbies into profits? You can&amp;rsquo;t stay at a company forever, you , now use your knowledge and try build your masterplan You have try a lot of cloud service, free is free at all, it consume your time and energy The problem seems in that you don&amp;rsquo;t have to record the even the most trivial mindset
+When you put your on</description>
+    </item>
+    
+    <item>
+      <title>Create Wafer Map with R &amp; Python</title>
+      <link>/posts/wafermap/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wafermap/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</description>
+    </item>
+    
+    <item>
+      <title>Create Wafer Map with R &amp; Python</title>
+      <link>/posts/wafermap/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wafermap/</guid>
+      <description>Just start the journey of R, I can’t help to apply this to solve real world problems. about over 70,000 products in one wafer, to find if any anormal. basic statistic method is not enough. pattern, as common ring and moon pattern.
+Before I , I used python/seaborn to create wafer map to check the uniformity of. It tka. I just put the code here.</description>
+>>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
     </item>
     
     <item>
@@ -33,6 +82,28 @@ unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum
     </item>
     
     <item>
+<<<<<<< HEAD
+=======
+      <title>R &amp; RMarkdown Quick Start</title>
+      <link>/posts/rmad-rmd/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rmad-rmd/</guid>
+      <description>R &amp;amp; RMarkdown, A Short Note I knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
+    </item>
+    
+    <item>
+      <title>Quarterly Review</title>
+      <link>/posts/quarterly_review/</link>
+      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
+      
+      <guid>/posts/quarterly_review/</guid>
+      <description> Frankly speaking, you have set a bunch of target but actually you haven&amp;rsquo;t made any progress at all. Now you have to narrow down your objectives.
+Progress Wishlist </description>
+    </item>
+    
+    <item>
+>>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <title>A brief Introduction to DOT language</title>
       <link>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
