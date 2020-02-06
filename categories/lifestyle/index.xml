@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lifestyle on Leon Xiao&#39;s Blog</title>
-    <link>/categories/lifestyle/</link>
-    <description>Recent content in Lifestyle on Leon Xiao&#39;s Blog</description>
+    <title>lifestyle on Leon Xiao&#39;s Blog</title>
+    <link>https://www.xlhaw.com/categories/lifestyle/</link>
+    <description>Recent content in lifestyle on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 09:18:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/lifestyle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/categories/lifestyle/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A few word</title>
-      <link>/posts/yet-another-plan/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/posts/yet-another-plan/</guid>
-      <description>Writing is your weakness since you re. You&amp;rsquo;re never good at expressing your idea. Make it useful.</description>
-    </item>
     
     <item>
-      <title>New Year Plan 2018</title>
-      <link>/posts/new-year-plan/</link>
+      <title>New Year&#39;s Plan 2018</title>
+      <link>https://www.xlhaw.com/posts/new-year-plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
       
-      <guid>/posts/new-year-plan/</guid>
-      <description>Say hi,say bye!
+      <guid>https://www.xlhaw.com/posts/new-year-plan/</guid>
+      <description>Say hi, say bye!
 Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.
-Cliche as always. I don&amp;rsquo;t recall how much blogs I have created before.But I&amp;rsquo;m sure this blog will last as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.
-Criteria  Forget about yourself, don&amp;rsquo;t critize and judge your past.</description>
+Cliche as always. I don&amp;rsquo;t recall how many blogs I have created before. But I&amp;rsquo;m sure this blog will be well maintained as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.</description>
     </item>
     
   </channel>

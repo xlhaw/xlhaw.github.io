@@ -2,54 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Leon Xiao&#39;s Blog</title>
-    <link>/tags/r/</link>
+    <link>https://www.xlhaw.com/tags/r/</link>
     <description>Recent content in R on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Create Wafer Map with R &amp; Python</title>
-      <link>/posts/wafermap/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/wafermap/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</description>
-    </item>
-    
-    <item>
-      <title>Create Wafer Map with R &amp; Python</title>
-      <link>/posts/wafermap/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/wafermap/</guid>
-      <description>Just start the journey of R, I can’t help to apply this to solve real world problems. about over 70,000 products in one wafer, to find if any anormal. basic statistic method is not enough. pattern, as common ring and moon pattern.
-Before I , I used python/seaborn to create wafer map to check the uniformity of. It tka. I just put the code here.</description>
-    </item>
     
     <item>
       <title>R &amp; RMarkdown Quick Start</title>
-      <link>/rmad-rmd/</link>
+      <link>https://www.xlhaw.com/rmad-rmd/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/rmad-rmd/</guid>
+      <guid>https://www.xlhaw.com/rmad-rmd/</guid>
       <description>IntroductionR Vs Pandas/Pythonlibrary() source(.R) ~ import getwd() ~ os.getcwd() setwd(‘/’) ~ os.chdir(‘\’) df &amp;lt;- read.csv(path) ~ df=pd.read_csv(path)
 unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum cor(df[,c(‘a’,‘b’)]) ~df[[‘a’,‘b’]].corr() %in% ~ isin() subset(df,a==‘a’&amp;amp;b=‘b’) ~ df[(df.a==‘a’)&amp;amp;(df.b==‘b’)] %&amp;gt;% length(df$col) ~ df.col.shape merged = df1.merge(df2, on=‘id’) ~ merged=df1.merge(df2,on=‘id’) ?module ~ help(module)
 Data Structurec/list/array/matrix/factor/data.frame factor() behave like set() in python
 Control Flowfunction(input){} for (indx in start:end){} if (cond) {} else {} ifelse(cond,ifyes,ifno) switch(,do1,do2,…)</description>
-    </item>
-    
-    <item>
-      <title>R &amp; RMarkdown Quick Start</title>
-      <link>/posts/rmad-rmd/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/rmad-rmd/</guid>
-      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
     </item>
     
   </channel>

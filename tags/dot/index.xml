@@ -1,54 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dot on Leon Xiao&#39;s Blog</title>
-    <link>/tags/dot/</link>
-    <description>Recent content in Dot on Leon Xiao&#39;s Blog</description>
+    <title>dot on Leon Xiao&#39;s Blog</title>
+    <link>https://www.xlhaw.com/tags/dot/</link>
+    <description>Recent content in dot on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
     
-	<atom:link href="/tags/dot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/tags/dot/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A few word</title>
-      <link>/posts/yet-another-plan/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/posts/yet-another-plan/</guid>
-      <description>Writing is your weakness since you re. You&amp;rsquo;re never good at expressing your idea. Make it useful.</description>
-    </item>
-    
-    <item>
-      <title>Quarterly Review</title>
-      <link>/posts/quarterly_review/</link>
-      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
-      
-      <guid>/posts/quarterly_review/</guid>
-      <description> Frankly speaking, you have set a bunch of target but actually you haven&amp;rsquo;t made any progress at all. Now you have to narrow down your objectives.
-Progress Wishlist </description>
-    </item>
     
     <item>
       <title>A brief Introduction to DOT language</title>
-      <link>/posts/a-brief-introduction-to-dot-language/</link>
+      <link>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>/posts/a-brief-introduction-to-dot-language/</guid>
-      <description>Free from the Restrictions I have been quite obesssed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio,Grapholite,SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the oppotunity to free yourself from those trival matters, what you neeed to do is just focus on your own thinking and leave the rest to DOT.</description>
-    </item>
-    
-    <item>
-      <title>New Year Plan 2018</title>
-      <link>/posts/new-year-plan/</link>
-      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
-      
-      <guid>/posts/new-year-plan/</guid>
-      <description>Say hi,say bye!
-Say goodbye to yesterday low-efficiency and embrace a brand-new, productive lifestyle.
-Cliche as always. I don&amp;rsquo;t recall how much blogs I have created before.But I&amp;rsquo;m sure this blog will last as long as I&amp;rsquo;m able to write. Consider this article as the debut of &amp;lsquo;I do&amp;rsquo; new episode, as well as the end of &amp;lsquo;Hello World&amp;rsquo; storyline.
-Criteria  Forget about yourself, don&amp;rsquo;t critize and judge your past.</description>
+      <guid>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</guid>
+      <description>Free from the Restrictions I have been quite obsessed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio, Grapholite, SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the opportunity to free yourself from those trivial matters, what you need to do is just focus on your own thinking and leave the rest to DOT.</description>
     </item>
     
   </channel>

@@ -1,2 +1,0 @@
-# xlhaw.github.io
-Blog

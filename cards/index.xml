@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cards on Leon Xiao&#39;s Blog</title>
-    <link>/cards/</link>
+    <link>https://www.xlhaw.com/cards/</link>
     <description>Recent content in Cards on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jan 2018 23:21:51 +0530</lastBuildDate>
     
-	<atom:link href="/cards/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xlhaw.com/cards/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Resume</title>
-      <link>/cards/cv/</link>
+      <link>https://www.xlhaw.com/cards/cv/</link>
       <pubDate>Tue, 30 Jan 2018 23:21:51 +0530</pubDate>
       
-      <guid>/cards/cv/</guid>
-      <description></description>
+      <guid>https://www.xlhaw.com/cards/cv/</guid>
+      <description>What&amp;rsquo;s your legacy</description>
     </item>
     
   </channel>

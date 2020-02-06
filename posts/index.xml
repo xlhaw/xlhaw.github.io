@@ -1,127 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leon Xiao&#39;s Blog</title>
-    <link>/posts/</link>
+    <link>https://www.xlhaw.com/posts/</link>
     <description>Recent content in Posts on Leon Xiao&#39;s Blog</description>
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.55.3" />
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
     
-        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xlhaw.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A few word</title>
-      <link>/posts/yet-another-plan/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/posts/yet-another-plan/</guid>
-      <description>New Year Plan 2018</description>
-    </item>
-    
-    <item>
-      <title>Create Wafer Map with R &amp; Python</title>
-      <link>/posts/wafermap/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/wafermap/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</description>
-    </item>
-    
-    <item>
-      <title>Create Wafer Map with R &amp; Python</title>
-      <link>/posts/wafermap/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/wafermap/</guid>
-      <description>Just start the journey of R, I can’t help to apply this to solve real world problems. about over 70,000 products in one wafer, to find if any anormal. basic statistic method is not enough. pattern, as common ring and moon pattern.
-Before I , I used python/seaborn to create wafer map to check the uniformity of. It tka. I just put the code here.</description>
-    </item>
-    
-    <item>
-      <title>R &amp; RMarkdown Quick Start</title>
-      <link>/posts/rmad-rmd/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/rmad-rmd/</guid>
-      <description>R &amp;amp; RMarkdown, A Short NoteI knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
-    </item>
-    
-    <item>
-      <title>Quarterly Review</title>
-      <link>/posts/quarterly_review/</link>
-      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
-      
-      <guid>/posts/quarterly_review/</guid>
-      <description>Quarterly Review</description>
-    </item>
     
     <item>
       <title>A brief Introduction to DOT language</title>
-      <link>/posts/a-brief-introduction-to-dot-language/</link>
+      <link>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
-      <guid>/posts/a-brief-introduction-to-dot-language/</guid>
+      <guid>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</guid>
       <description>A brief Introduction to DOT language </description>
     </item>
     
     <item>
-      <title>New Year Plan 2018</title>
-      <link>/posts/new-year-plan/</link>
+      <title>New Year&#39;s Plan 2018</title>
+      <link>https://www.xlhaw.com/posts/new-year-plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
       
-      <guid>/posts/new-year-plan/</guid>
-      <description>New Year Plan 2018</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/posts/hugoisforlovers/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/posts/hugoisforlovers/</guid>
-      <description>A quick read on how to get started with Hugo.</description>
-    </item>
-    
-    <item>
-      <title>Testing &#34;django-netjsonconfig&#34;</title>
-      <link>/posts/netjsonconfig/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/posts/netjsonconfig/</guid>
-      <description>The challenges which I faced while installing and using **django-netjsonconfig**. </description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/creating-a-new-theme/</guid>
-      <description>A tutorial on how to create a Hugo theme.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/goisforlovers/</guid>
-      <description>An introduction to Hugo, a static site generator.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>/posts/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/hello-world/</guid>
-      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start Create a new post 1  $ hexo new &amp;#34;My New Post&amp;#34;   More info: Writing
-Run server 1  $ hexo server   More info: Server
-Generate static files 1  $ hexo generate   More info: Generating</description>
+      <guid>https://www.xlhaw.com/posts/new-year-plan/</guid>
+      <description>New Year&#39;s Plan 2018</description>
     </item>
     
   </channel>

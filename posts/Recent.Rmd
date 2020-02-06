@@ -4,7 +4,7 @@ author: "Leon Xiao"
 date: '2019-01-12'
 cover: /images/default1.jpg
 description: null
-draft: false
+draft: true
 lastmod: '2019-01-13T17:54:26+08:00'
 slug: rmad-rmd
 tags:

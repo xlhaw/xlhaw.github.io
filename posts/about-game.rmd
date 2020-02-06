@@ -45,4 +45,36 @@ library(DT)
 datatable(iris)
 summary(iris)
 ```
+library(xtable)
+ome_colors <- colors()[1:4]
+
+ + facet_grid(sex ~ .) /  + facet_grid(. ~ sex) / facet_wrap( ~ day, ncol=2) / facet_grid(sex ~ smoker, scales="free_y")/ facet_grid(sex ~ smoker, scales="free", space="free")
+
+
+my.formula <- y ~ x
+
+
+PI <- paste("The life of", pi)
+paste("X", 1:5, sep = ".")
+paste(1:3, c("!","?","+"), sep = '')
+rep('a',3)
+cat(month.name[1:4], sep = " ")
+
+format(format(1/1:5, digits = 2), width = 6, justify = "c")
+
+sprintf("%02d", 5)
+paste0('data0', 1:3, '.csv')
+file_names <- sprintf('data%02d.csv', 1:100)
+
+m <- matrix(1:12, nrow = 3, ncol = 4)
+cat(m)
+
+re
+
+df <- read.csv('mc.csv')
+library(MASS)
+library(tidyverse)
+ggplot(data=df,aes(RLGH,iM))+facet_grid(WAFER~BLOCK)+stat_smooth(method ='rlm')
+ggplot(data=df,aes(RLGH,iM),geom_point())+facet_grid(WAFER~BLOCK)+stat_smooth(method ='rlm')
+ggplot(data=df,aes(RLGH,iM)) + geom_point(shape=1) +facet_grid(WAFER~BLOCK) +stat_smooth(method ='rlm')
 

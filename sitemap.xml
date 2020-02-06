@@ -3,264 +3,128 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/cards/cv/</loc>
+    <loc>https://www.xlhaw.com/cards/cv/</loc>
     <lastmod>2018-01-30T23:21:51+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/posts/yet-another-plan/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
+    <loc>https://www.xlhaw.com/categories/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/wafermap/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/wafermap/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/categories/notes/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/rmad-rmd/</loc>
+    <loc>https://www.xlhaw.com/categories/programming/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/r/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/rmad-rmd/</loc>
     <lastmod>2019-01-12T17:54:26+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/rmad-rmd/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/tags/r-markdown/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/quarterly_review/</loc>
-    <lastmod>2018-10-14T20:58:30+00:00</lastmod>
+    <loc>https://www.xlhaw.com/tags/</loc>
+    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/a-brief-introduction-to-dot-language/</loc>
+    <loc>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</loc>
     <lastmod>2018-03-17T20:58:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/new-year-plan/</loc>
+    <loc>https://www.xlhaw.com/posts/</loc>
+    <lastmod>2018-03-17T20:58:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/dot/</loc>
+    <lastmod>2018-03-17T20:58:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/graphviz/</loc>
+    <lastmod>2018-03-17T20:58:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/categories/tools/</loc>
+    <lastmod>2018-03-17T20:58:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/new-year-plan/</loc>
     <lastmod>2018-02-20T09:18:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hugoisforlovers/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/netjsonconfig/</loc>
-    <lastmod>2018-01-14T14:28:40+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/404/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-  </url>
-  
-  <url>
-    <loc>/cards/</loc>
-    <lastmod>2018-01-30T23:21:51+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/development/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/development/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/django/</loc>
-    <lastmod>2018-01-14T14:28:40+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dot/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/example/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/f/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/go/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/golang/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/golang/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-code-in/</loc>
-    <lastmod>2018-01-14T14:28:40+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/graphviz/</loc>
-    <lastmod>2018-10-14T20:58:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/heatmap/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/posts/hello-world/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-01-30T23:21:51+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/lifestyle/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/notes/</loc>
-    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/openwisp/</loc>
-    <lastmod>2018-01-14T14:28:40+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plan/</loc>
+    <loc>https://www.xlhaw.com/tags/example/</loc>
     <lastmod>2018-02-20T09:18:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-02-20T09:18:00+00:00</lastmod>
+    <loc>https://www.xlhaw.com/tags/greeting/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/categories/lifestyle/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/tags/plan/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/cards/</loc>
+    <lastmod>2018-01-30T23:21:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/404/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2018-01-28T18:59:43+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tools/</loc>
-    <lastmod>2018-10-14T20:58:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tutorials/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/visualization/</loc>
-    <lastmod>2019-01-13T17:54:26+08:00</lastmod>
+    <loc>https://www.xlhaw.com/about/</loc>
     <priority>0</priority>
   </url>
   
