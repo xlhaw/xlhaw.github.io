@@ -6,46 +6,12 @@
     <description>Recent content in Categories on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
     <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
-=======
-    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
     
 	<atom:link href="https://www.xlhaw.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
-=======
-      <title>lifestyle</title>
-      <link>/categories/lifestyle/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/categories/lifestyle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>/categories/programming/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>/categories/visualization/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <title>Notes</title>
       <link>https://www.xlhaw.com/categories/notes/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
@@ -55,62 +21,29 @@
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>Programming</title>
       <link>https://www.xlhaw.com/categories/programming/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/categories/programming/</guid>
-=======
-      <title>tools</title>
-      <link>/categories/tools/</link>
-      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
-      
-      <guid>/categories/tools/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>development</title>
-      <link>/categories/development/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/categories/development/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
-      <description></description>
-    </item>
-    
-    <item>
-<<<<<<< HEAD
       <title>tools</title>
       <link>https://www.xlhaw.com/categories/tools/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/categories/tools/</guid>
-=======
-      <title>golang</title>
-      <link>/categories/golang/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/categories/golang/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>lifestyle</title>
       <link>https://www.xlhaw.com/categories/lifestyle/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/categories/lifestyle/</guid>
-=======
-      <title>tutorials</title>
-      <link>/categories/tutorials/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/tutorials/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <description></description>
     </item>
     

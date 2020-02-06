@@ -23,17 +23,5 @@ unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum
 Control Flowfunction(input){} for (indx in start:end){} if (cond) {} else {} ifelse(cond,ifyes,ifno) switch(,do1,do2,…)</description>
     </item>
     
-<<<<<<< HEAD
-=======
-    <item>
-      <title>R &amp; RMarkdown Quick Start</title>
-      <link>/posts/rmad-rmd/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/rmad-rmd/</guid>
-      <description>R &amp;amp; RMarkdown, A Short Note I knew the R language long time ago. At around 2009, I started to learn the basics of Maple and MATLAB While I never really looked into the R. Even though I’m still a layman in programming. What brings me back to R&amp;amp;Rmarkdown is that I found it extremly convenient to write and elaborate ideas in markdown. And Rmarkdown makes writing more efficient and plotting more seamless.</description>
-    </item>
-    
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
   </channel>
 </rss>

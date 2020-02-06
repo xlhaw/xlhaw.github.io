@@ -2,11 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lifestyle on Leon Xiao&#39;s Blog</title>
-<<<<<<< HEAD
     <link>https://www.xlhaw.com/categories/lifestyle/</link>
-=======
-    <link>/categories/lifestyle/</link>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
     <description>Recent content in lifestyle on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

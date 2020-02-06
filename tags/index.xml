@@ -6,222 +6,69 @@
     <description>Recent content in Tags on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-<<<<<<< HEAD
     <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
-=======
-    <lastBuildDate>Wed, 20 Feb 2019 09:18:00 +0000</lastBuildDate>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
     
 	<atom:link href="https://www.xlhaw.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
       <title>R</title>
       <link>https://www.xlhaw.com/tags/r/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-=======
-      <title>dot</title>
-      <link>/tags/dot/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/tags/dot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>example</title>
-      <link>/tags/example/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/tags/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>f</title>
-      <link>/tags/f/</link>
-      <pubDate>Wed, 20 Feb 2019 09:18:00 +0000</pubDate>
-      
-      <guid>/tags/f/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Heatmap</title>
-      <link>/tags/heatmap/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/heatmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>graphviz</title>
-      <link>/tags/graphviz/</link>
-      <pubDate>Sun, 14 Oct 2018 20:58:30 +0000</pubDate>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       
       <guid>https://www.xlhaw.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>R Markdown</title>
       <link>https://www.xlhaw.com/tags/r-markdown/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/tags/r-markdown/</guid>
-=======
-      <title>plan</title>
-      <link>/tags/plan/</link>
-      <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
-      
-      <guid>/tags/plan/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>dot</title>
       <link>https://www.xlhaw.com/tags/dot/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/tags/dot/</guid>
-=======
-      <title>development</title>
-      <link>/tags/development/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/development/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>graphviz</title>
       <link>https://www.xlhaw.com/tags/graphviz/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/tags/graphviz/</guid>
-=======
-      <title>go</title>
-      <link>/tags/go/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/go/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>example</title>
       <link>https://www.xlhaw.com/tags/example/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/tags/example/</guid>
-=======
-      <title>golang</title>
-      <link>/tags/golang/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Sun, 28 Jan 2018 18:59:43 +0530</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>django</title>
-      <link>/tags/django/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>google code in</title>
-      <link>/tags/google-code-in/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/google-code-in/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>openwisp</title>
-      <link>/tags/openwisp/</link>
-      <pubDate>Sun, 14 Jan 2018 14:28:40 +0530</pubDate>
-      
-      <guid>/tags/openwisp/</guid>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
-      <description></description>
-    </item>
-    
-    <item>
-<<<<<<< HEAD
       <title>greeting</title>
       <link>https://www.xlhaw.com/tags/greeting/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
-=======
-      <title>templates</title>
-      <link>/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       
       <guid>https://www.xlhaw.com/tags/greeting/</guid>
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>plan</title>
       <link>https://www.xlhaw.com/tags/plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
-=======
-      <title>themes</title>
-      <link>/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
->>>>>>> 946420fa88a4ad3ff20ad66c512125a8e92c5748
       
       <guid>https://www.xlhaw.com/tags/plan/</guid>
       <description></description>
