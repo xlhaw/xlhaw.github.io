@@ -2,7 +2,9 @@
 Blog
 ![](images/15890827935054.jpg)
 
-
+## Blog posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 ### Connect with me:
 
@@ -31,7 +33,9 @@ Blog
 
 </details>
 
-
+<a href="https://dev.to/xlhaw">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Leon Xiao's DEV Profile" height="30" width="30">
+</a>
 [website]: https://xlhaw.com
 [twitter]: https://twitter.com/xlhaw
 [youtube]: https://youtube.com/xlhaw
