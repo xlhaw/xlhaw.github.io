@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -9,32 +9,57 @@
   
   <url>
     <loc>https://www.xlhaw.com/categories/</loc>
-    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/dot/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/</loc>
-    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/categories/tools/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/2020-09-26/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/widget/</loc>
+    <lastmod>2020-10-02T20:58:30+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/categories/notes/</loc>
     <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/categories/programming/</loc>
     <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/tags/r/</loc>
     <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,13 +70,6 @@
   <url>
     <loc>https://www.xlhaw.com/tags/r-markdown/</loc>
     <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xlhaw.com/tags/</loc>
-    <lastmod>2019-01-12T17:54:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -60,27 +78,33 @@
   </url>
   
   <url>
-    <loc>https://www.xlhaw.com/posts/</loc>
+    <loc>https://www.xlhaw.com/posts/2020-10-06/</loc>
     <lastmod>2018-03-17T20:58:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xlhaw.com/tags/dot/</loc>
-    <lastmod>2018-03-17T20:58:30+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/tags/graphviz/</loc>
     <lastmod>2018-03-17T20:58:30+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.xlhaw.com/categories/tools/</loc>
+    <loc>https://www.xlhaw.com/posts/pipeline/</loc>
     <lastmod>2018-03-17T20:58:30+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/example/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/tags/greeting/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/categories/lifestyle/</loc>
+    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
   </url>
   
   <url>
@@ -89,33 +113,13 @@
   </url>
   
   <url>
-    <loc>https://www.xlhaw.com/tags/example/</loc>
-    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xlhaw.com/tags/greeting/</loc>
-    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xlhaw.com/categories/lifestyle/</loc>
-    <lastmod>2018-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xlhaw.com/tags/plan/</loc>
     <lastmod>2018-02-20T09:18:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.xlhaw.com/cards/</loc>
     <lastmod>2018-01-30T23:21:51+05:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -126,6 +130,22 @@
   <url>
     <loc>https://www.xlhaw.com/about/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/2020-02-09/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/2020-03-01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/2020-05-31/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.xlhaw.com/posts/use-plot-with-python/</loc>
   </url>
   
 </urlset>

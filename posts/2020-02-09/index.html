@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>
+	
+</title>
+		<style>
+	body {
+		display: block;
+		--colorBG: "#40e0d0, #ff8c00, #ff0080";
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		
+	}
+
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	<meta name="author" content="Leon Xiao" />
+	<meta name="description" content="# PyTorch to MXNet This cheatsheet serves as a quick reference for PyTorch users.
+Pytorch Tensor and MXNet NDArray Tensor operation We document PyTorch function names that are different than MXNet NDArray
+   Function PyTorch MXNet Gluon     Element-wise inverse cosine x.acos() or torch.acos(x) nd.arccos(x)   Batch Matrix product and accumulation torch.addbmm(M, batch1, batch2) nd.linalg_gemm(M, batch1, batch2) Leading n-2 dim are reduced   Element-wise division of t1, t2, multiply v, and add t torch." />
+
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+	<link rel="stylesheet" type="text/css" href="/css/highlight.css">
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css">
+	
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  true 
+	var enabledPost =  false 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+	var gradients = [
+	  [],
+	  ['#40e0d0', '#ff8c00', '#ff0080'], 
+	  ['#3e5151', '#decba4'], 
+	  ['#11998e', '#38ef7d'], 
+	  ['#108dc7', '#ef8e38'], 
+	  ['#fc5c7d', '#6a82fb'], 
+	  ['#fc466b', '#3f5efb'], 
+	  ['#c94b4b', '#4b134f'], 
+	  ['#23074d', '#cc5333'] 
+	];
+	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]));
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+
+
+
+
+	
+		<a class="ui label green " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label violet " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label yellow " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label blue " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label brown " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label teal " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label violet " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+		<a class="ui label violet " href="/tags/widget" title="widget">widget</a>
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-09-26/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Try Try</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-10-06/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Better Readme</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/pipeline/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Pipeline: The thing you really need to take it serious</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		
+			<div class="item">
+				<a href="/posts">
+					<i class="inverted big link archive icon" title="Archive"></i>
+				</a>
+			</div>
+		
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Click this to pop tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+
+
+
+
+	
+		<a class="ui label teal " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label violet " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label brown " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label yellow " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label orange " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label pink " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label green " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+		<a class="ui label brown " href="/tags/widget" title="widget">widget</a>
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-09-26/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Try Try</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-10-06/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Better Readme</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/pipeline/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Pipeline: The thing you really need to take it serious</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Jan 1, 0001</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://www.xlhaw.com/posts/2020-02-09/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="15ebb291226c71d51e0bf79158d3dc95"></a></span></div>
+					<div><span><i class="clock outline icon"></i>7 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Jan 1, 0001</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pytorch-tensor-and-mxnet-ndarray">Pytorch Tensor and MXNet NDArray</a>
+      <ul>
+        <li><a href="#tensor-operation">Tensor operation</a></li>
+        <li><a href="#functional">Functional</a></li>
+        <li><a href="#gpu">GPU</a></li>
+        <li><a href="#cross-device">Cross-device</a></li>
+      </ul>
+    </li>
+    <li><a href="#autograd">Autograd</a>
+      <ul>
+        <li><a href="#variable-wrapper-vs-autograd-scope">variable wrapper vs autograd scope</a></li>
+        <li><a href="#scope-override-pause-train_mode-predict_mode">scope override (pause, train_mode, predict_mode)</a></li>
+        <li><a href="#batch-end-synchronization-is-needed">batch-end synchronization is needed</a></li>
+      </ul>
+    </li>
+    <li><a href="#pytorch-module-and-gluon-blocks">Pytorch module and Gluon blocks</a>
+      <ul>
+        <li><a href="#for-new-block-definition-gluon-needs-name_scope">for new block definition, gluon needs name_scope</a></li>
+        <li><a href="#parameter-and-initializer">Parameter and Initializer</a></li>
+        <li><a href="#usage-of-existing-blocks-look-alike">usage of existing blocks look alike</a></li>
+        <li><a href="#hybridblock-can-be-hybridized-and-allows-partial-shape-info">HybridBlock can be hybridized, and allows partial-shape info</a></li>
+        <li><a href="#symbolblock">SymbolBlock</a></li>
+      </ul>
+    </li>
+    <li><a href="#pytorch-optimizer-vs-gluon-trainer">Pytorch optimizer vs Gluon Trainer</a>
+      <ul>
+        <li><a href="#for-gluon-zero_grad-is-not-necessary-most-of-the-time">for gluon zero_grad is not necessary most of the time</a></li>
+        <li><a href="#multi-gpu-training">Multi-GPU training</a></li>
+        <li><a href="#distributed-training">Distributed training</a></li>
+      </ul>
+    </li>
+    <li><a href="#monitoring">Monitoring</a>
+      <ul>
+        <li><a href="#mxnet-has-pre-defined-metrics">MXNet has pre-defined metrics</a></li>
+        <li><a href="#data-visualization">Data visualization</a></li>
+      </ul>
+    </li>
+    <li><a href="#io-and-deploy">I/O and deploy</a>
+      <ul>
+        <li><a href="#data-loading">Data loading</a></li>
+        <li><a href="#serialization">Serialization</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					<h1 id="-pytorch-to-mxnet"># PyTorch to MXNet&nbsp;<a class="anchor" href="#-pytorch-to-mxnet"><i class="small linkify icon"></i></a> </h1>
+<p>This cheatsheet serves as a quick reference for PyTorch users.</p>
+<h2 id="pytorch-tensor-and-mxnet-ndarray">Pytorch Tensor and MXNet NDArray&nbsp;<a class="anchor" href="#pytorch-tensor-and-mxnet-ndarray"><i class="small linkify icon"></i></a> </h2>
+<h3 id="tensor-operation">Tensor operation&nbsp;<a class="anchor" href="#tensor-operation"><i class="small linkify icon"></i></a> </h3>
+<p>We document PyTorch function names that are different than MXNet NDArray</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Element-wise inverse cosine</td>
+<td><code>x.acos()</code> or <code>torch.acos(x)</code></td>
+<td><code>nd.arccos(x)</code></td>
+</tr>
+<tr>
+<td>Batch Matrix product and accumulation</td>
+<td><code>torch.addbmm(M, batch1, batch2)</code></td>
+<td><code>nd.linalg_gemm(M, batch1, batch2)</code> Leading n-2 dim are reduced</td>
+</tr>
+<tr>
+<td>Element-wise division of t1, t2, multiply v, and add t</td>
+<td><code>torch.addcdiv(t, v, t1, t2)</code></td>
+<td><code>t + v*(t1/t2)</code></td>
+</tr>
+<tr>
+<td>Matrix product and accumulation</td>
+<td><code>torch.addmm(M, mat1, mat2)</code></td>
+<td><code>nd.linalg_gemm(M, mat1, mat2)</code></td>
+</tr>
+<tr>
+<td>Outer-product of two vector add a matrix</td>
+<td><code>m.addr(vec1, vec2)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Element-wise applies function</td>
+<td><code>x.apply_(calllable)</code></td>
+<td>Not available, but there is <code>nd.custom(x, 'op')</code></td>
+</tr>
+<tr>
+<td>Element-wise inverse sine</td>
+<td><code>x.asin()</code> or <code>torch.asin(x)</code></td>
+<td><code>nd.arcsin(x)</code></td>
+</tr>
+<tr>
+<td>Element-wise inverse tangent</td>
+<td><code>x.atan()</code> or <code>torch.atan(x)</code></td>
+<td><code>nd.arctan(x)</code></td>
+</tr>
+<tr>
+<td>Tangent of two tensor</td>
+<td><code>x.atan2(y)</code> or <code>torch.atan2(x, y)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>batch matrix product</td>
+<td><code>x.bmm(y)</code> or <code>torch.bmm(x, x)</code></td>
+<td><code>nd.linalg_gemm2(x, y)</code></td>
+</tr>
+<tr>
+<td>Draws a sample from bernoulli distribution</td>
+<td><code>x.bernoulli()</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Fills a tensor with number drawn from Cauchy distribution</td>
+<td><code>x.cauchy_()</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Splits a tensor in a given dim</td>
+<td><code>x.chunk(num_of_chunk)</code></td>
+<td><code>nd.split(x, num_outputs=num_of_chunk)</code></td>
+</tr>
+<tr>
+<td>Limits the values of a tensor to between min and max</td>
+<td><code>x.clamp(min, max)</code></td>
+<td><code>nd.clip(x, min, max)</code></td>
+</tr>
+<tr>
+<td>Returns a copy of the tensor</td>
+<td><code>x.clone()</code></td>
+<td><code>x.copy()</code></td>
+</tr>
+<tr>
+<td>Cross product</td>
+<td><code>x.cross(y)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Cumulative product along an axis</td>
+<td><code>x.cumprod(1)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Cumulative sum along an axis</td>
+<td><code>x.cumsum(1)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Address of the first element</td>
+<td><code>x.data_ptr()</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Creates a diagonal tensor</td>
+<td><code>x.diag()</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Computes norm of a tensor</td>
+<td><code>x.dist()</code></td>
+<td><code>nd.norm(x)</code> Only calculate L2 norm</td>
+</tr>
+<tr>
+<td>Computes Gauss error function</td>
+<td><code>x.erf()</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Broadcasts/Expands tensor to new shape</td>
+<td><code>x.expand(3,4)</code></td>
+<td><code>x.broadcast_to([3, 4])</code></td>
+</tr>
+<tr>
+<td>Fills a tensor with samples drawn from exponential distribution</td>
+<td><code>x.exponential_()</code></td>
+<td><code>nd.random_exponential()</code></td>
+</tr>
+<tr>
+<td>Element-wise mod</td>
+<td><code>x.fmod(3)</code></td>
+<td><code>nd.module(x, 3)</code></td>
+</tr>
+<tr>
+<td>Fractional portion of a tensor</td>
+<td><code>x.frac()</code></td>
+<td><code>x - nd.trunc(x)</code></td>
+</tr>
+<tr>
+<td>Gathers values along an axis specified by dim</td>
+<td><code>torch.gather(x, 1,  torch.LongTensor([[0,0],[1,0]]))</code></td>
+<td><code>nd.gather_nd(x, nd.array([[[0,0],[1,1]],[[0,0],[1,0]]]))</code></td>
+</tr>
+<tr>
+<td>Solves least square &amp; least norm</td>
+<td><code>B.gels(A)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Draws from geometirc distribution</td>
+<td><code>x.geometric_(p)</code></td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Device context of a tensor</td>
+<td><code>print(x)</code> will print which device x is on</td>
+<td><code>x.context</code></td>
+</tr>
+<tr>
+<td>Repeats tensor</td>
+<td><code>x.repeat(4,2)</code></td>
+<td><code>x.tile(4,2)</code></td>
+</tr>
+<tr>
+<td>Data type of a tensor</td>
+<td><code>x.type()</code></td>
+<td><code>x.dtype</code></td>
+</tr>
+<tr>
+<td>Scatter</td>
+<td><code>torch.zeros(2, 4).scatter_(1, torch.LongTensor([[2], [3]]), 1.23)</code></td>
+<td><code>nd.scatter_nd(nd.array([1.23,1.23]), nd.array([[0,1],[2,3]]), (2,4))</code></td>
+</tr>
+<tr>
+<td>Returns the shape of a tensor</td>
+<td><code>x.size()</code></td>
+<td><code>x.shape</code></td>
+</tr>
+<tr>
+<td>Number of elements in a tensor</td>
+<td><code>x.numel()</code></td>
+<td><code>x.size</code></td>
+</tr>
+<tr>
+<td>Returns this tensor as a NumPy ndarray</td>
+<td><code>x.numpy()</code></td>
+<td><code>x.asnumpy()</code></td>
+</tr>
+<tr>
+<td>Eigendecomposition for symmetric matrix</td>
+<td><code>e, v = a.symeig()</code></td>
+<td><code>v, e = nd.linalg.syevd(a)</code></td>
+</tr>
+<tr>
+<td>Transpose</td>
+<td><code>x.t()</code></td>
+<td><code>x.T</code></td>
+</tr>
+<tr>
+<td>Sample uniformly</td>
+<td><code>torch.uniform_()</code></td>
+<td><code>nd.sample_uniform()</code></td>
+</tr>
+<tr>
+<td>Inserts a new dimesion</td>
+<td><code>x.unsqueeze()</code></td>
+<td><code>nd.expand_dims(x)</code></td>
+</tr>
+<tr>
+<td>Reshape</td>
+<td><code>x.view(16)</code></td>
+<td><code>x.reshape((16,))</code></td>
+</tr>
+<tr>
+<td>Veiw as a specified tensor</td>
+<td><code>x.view_as(y)</code></td>
+<td><code>x.reshape_like(y)</code></td>
+</tr>
+<tr>
+<td>Returns a copy of the tensor after casting to a specified type</td>
+<td><code>x.type(type)</code></td>
+<td><code>x.astype(dtype)</code></td>
+</tr>
+<tr>
+<td>Copies the value of one tensor to another</td>
+<td><code>dst.copy_(src)</code></td>
+<td><code>src.copyto(dst)</code></td>
+</tr>
+<tr>
+<td>Returns a zero tensor with specified shape</td>
+<td><code>x = torch.zeros(2,3)</code></td>
+<td><code>x = nd.zeros((2,3))</code></td>
+</tr>
+<tr>
+<td>Returns a one tensor with specified shape</td>
+<td><code>x = torch.ones(2,3)</code></td>
+<td><code>x = nd.ones((2,3)</code></td>
+</tr>
+<tr>
+<td>Returns a Tensor filled with the scalar value 1, with the same size as input</td>
+<td><code>y = torch.ones_like(x)</code></td>
+<td><code>y = nd.ones_like(x)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="functional">Functional&nbsp;<a class="anchor" href="#functional"><i class="small linkify icon"></i></a> </h3>
+<h3 id="gpu">GPU&nbsp;<a class="anchor" href="#gpu"><i class="small linkify icon"></i></a> </h3>
+<p>Just like Tensor, MXNet NDArray can be copied to and operated on GPU. This is done by specifying
+context.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy to GPU</td>
+<td><code>y = torch.FloatTensor(1).cuda()</code></td>
+<td><code>y = mx.nd.ones((1,), ctx=mx.gpu(0))</code></td>
+</tr>
+<tr>
+<td>Convert to numpy array</td>
+<td><code>x = y.cpu().numpy()</code></td>
+<td><code>x = y.asnumpy()</code></td>
+</tr>
+<tr>
+<td>Context scope</td>
+<td><code>with torch.cuda.device(1):</code><br/>    <code>y= torch.cuda.FloatTensor(1)</code></td>
+<td><code>with mx.gpu(1):</code><br/>    <code>y = mx.nd.ones((3,5))</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cross-device">Cross-device&nbsp;<a class="anchor" href="#cross-device"><i class="small linkify icon"></i></a> </h3>
+<p>Just like Tensor, MXNet NDArray can be copied across multiple GPUs.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy from GPU 0 to GPU 1</td>
+<td><code>x = torch.cuda.FloatTensor(1)</code><br/><code>y=x.cuda(1)</code></td>
+<td><code>x = mx.nd.ones((1,), ctx=mx.gpu(0))</code><br/><code>y=x.as_in_context(mx.gpu(1))</code></td>
+</tr>
+<tr>
+<td>Copy Tensor/NDArray on different GPUs</td>
+<td><code>y.copy_(x)</code></td>
+<td><code>x.copyto(y)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="autograd">Autograd&nbsp;<a class="anchor" href="#autograd"><i class="small linkify icon"></i></a> </h2>
+<h3 id="variable-wrapper-vs-autograd-scope">variable wrapper vs autograd scope&nbsp;<a class="anchor" href="#variable-wrapper-vs-autograd-scope"><i class="small linkify icon"></i></a> </h3>
+<p>Autograd package of PyTorch/MXNet enables automatic differentiation of Tensor/NDArray.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recording computation</td>
+<td><code>x = Variable(torch.FloatTensor(1), requires_grad=True)</code><br/><code>y = x * 2</code><br/><code>y.backward()</code></td>
+<td><code>x = mx.nd.ones((1,))</code><br/><code>x.attach_grad()</code><br/><code>with mx.autograd.record():</code><br/>    <code>y = x * 2</code><br/><code>y.backward()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="scope-override-pause-train_mode-predict_mode">scope override (pause, train_mode, predict_mode)&nbsp;<a class="anchor" href="#scope-override-pause-train_mode-predict_mode"><i class="small linkify icon"></i></a> </h3>
+<p>Some operators (Dropout, BatchNorm, etc) behave differently in training
+and making predictions. This can be controlled with train_mode and predict_mode scope in MXNet.
+Pause scope is for codes that do not need gradients to be calculated.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope override</td>
+<td>Not available</td>
+<td><code>x = mx.nd.ones((1,))</code><br/><code>with autograd.train_mode():</code><br/>    <code>y = mx.nd.Dropout(x)</code><br/>    <code>with autograd.predict_mode():</code><br/>        <code>z = mx.nd.Dropout(y)</code><br/><br/><code>w = mx.nd.ones((1,))</code><br/><code>w.attach_grad()</code><br/><code>with autograd.record():</code><br/>    <code>y = x * w</code><br/>    <code>y.backward()</code><br/>    <code>with autograd.pause():</code><br/>        <code>w += w.grad</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="batch-end-synchronization-is-needed">batch-end synchronization is needed&nbsp;<a class="anchor" href="#batch-end-synchronization-is-needed"><i class="small linkify icon"></i></a> </h3>
+<p>MXNet uses lazy evaluation to achieve superior performance. The Python thread just pushes the operations into the backend engine and then returns. In training phase batch-end synchronization is needed, e.g, <code>asnumpy()</code>, <code>wait_to_read()</code>, <code>metric.update(...)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batch-end synchronization</td>
+<td>Not available</td>
+<td><code>for (data, label) in train_data:</code><br/>    <code>with autograd.record():</code><br/>        <code>output = net(data)</code><br/>        <code>L = loss(output, label)</code><br/>        <code>L.backward()</code><br/>    <code>trainer.step(data.shape[0])</code><br/>    <code>metric.update([label], [output])</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pytorch-module-and-gluon-blocks">Pytorch module and Gluon blocks&nbsp;<a class="anchor" href="#pytorch-module-and-gluon-blocks"><i class="small linkify icon"></i></a> </h2>
+<h3 id="for-new-block-definition-gluon-needs-name_scope">for new block definition, gluon needs name_scope&nbsp;<a class="anchor" href="#for-new-block-definition-gluon-needs-name_scope"><i class="small linkify icon"></i></a> </h3>
+<p>name_scope coerces gluon to give each parameter an appropriate name, indicating which model it belongs to.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New block definition</td>
+<td><code>class Net(torch.nn.Module):</code><br/>    <code>def __init__(self, D_in, D_out):</code><br/>        <code>super(Net, self).__init__()</code><br/>        <code>self.linear = torch.nn.Linear(D_in, D_out)</code><br/>    <code>def forward(self, x):</code><br/>        <code>return self.linear(x)</code></td>
+<td><code>class Net(mx.gluon.Block):</code><br/>    <code>def __init__(self, D_in, D_out):</code><br/>        <code>super(Net, self).__init__()</code><br/>        <code>with self.name_scope():</code><br/>            <code>self.dense=mx.gluon.nn.Dense(D_out, in_units=D_in)</code><br/>    <code>def forward(self, x):</code><br/>        <code>return self.dense(x)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-and-initializer">Parameter and Initializer&nbsp;<a class="anchor" href="#parameter-and-initializer"><i class="small linkify icon"></i></a> </h3>
+<p>when creating new layers in pytorch, you do not need to specify its parameter initializer, and different layers have different default initializer. When you create new layers in gluon, you can specify its initializer or just leave it none. The parameters will finish initializing after calling <code>net.initialize(&lt;init method&gt;)</code> and all parameters will be initialized in <code>init method</code> except those layers whose initializer specified.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get all parameters</td>
+<td><code>net.parameters()</code></td>
+<td><code>net.collect_params()</code></td>
+</tr>
+<tr>
+<td>Initialize network</td>
+<td>Not Available</td>
+<td><code>net.initialize(mx.init.Xavier())</code></td>
+</tr>
+<tr>
+<td>Specify layer initializer</td>
+<td><code>layer = torch.nn.Linear(20, 10)</code><br/> <code>torch.nn.init.normal(layer.weight, 0, 0.01)</code></td>
+<td><code>layer = mx.gluon.nn.Dense(10, weight_initializer=mx.init.Normal(0.01))</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage-of-existing-blocks-look-alike">usage of existing blocks look alike&nbsp;<a class="anchor" href="#usage-of-existing-blocks-look-alike"><i class="small linkify icon"></i></a> </h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usage of existing blocks</td>
+<td><code>y=net(x)</code></td>
+<td><code>y=net(x)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hybridblock-can-be-hybridized-and-allows-partial-shape-info">HybridBlock can be hybridized, and allows partial-shape info&nbsp;<a class="anchor" href="#hybridblock-can-be-hybridized-and-allows-partial-shape-info"><i class="small linkify icon"></i></a> </h3>
+<p>HybridBlock supports forwarding with both Symbol and NDArray. After hybridized, HybridBlock will create a symbolic graph representing the forward computation and cache it. Most of the built-in blocks (Dense, Conv2D, MaxPool2D, BatchNorm, etc.) are HybridBlocks.</p>
+<p>Instead of explicitly declaring the number of inputs to a layer, we can simply state the number of outputs. The shape will be inferred on the fly once the network is provided with some input.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>partial-shape  <br/> hybridized</td>
+<td>Not Available</td>
+<td><code>net = mx.gluon.nn.HybridSequential()</code><br/><code>with net.name_scope():</code><br/>    <code>net.add(mx.gluon.nn.Dense(10))</code><br/><code>net.hybridize()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbolblock">SymbolBlock&nbsp;<a class="anchor" href="#symbolblock"><i class="small linkify icon"></i></a> </h3>
+<p>SymbolBlock can construct block from symbol. This is useful for using pre-trained models as feature extractors.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SymbolBlock</td>
+<td>Not Available</td>
+<td><code>alexnet = mx.gluon.model_zoo.vision.alexnet(pretrained=True, prefix='model_')</code><br/><code>out = alexnet(inputs)</code><br/><code>internals = out.get_internals()</code><br/><code>outputs = [internals['model_dense0_relu_fwd_output']]</code><br/><code>feat_model = gluon.SymbolBlock(outputs, inputs, params=alexnet.collect_params())</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pytorch-optimizer-vs-gluon-trainer">Pytorch optimizer vs Gluon Trainer&nbsp;<a class="anchor" href="#pytorch-optimizer-vs-gluon-trainer"><i class="small linkify icon"></i></a> </h2>
+<h3 id="for-gluon-zero_grad-is-not-necessary-most-of-the-time">for gluon zero_grad is not necessary most of the time&nbsp;<a class="anchor" href="#for-gluon-zero_grad-is-not-necessary-most-of-the-time"><i class="small linkify icon"></i></a> </h3>
+<p><code>zero_grad</code> in optimizer(Pytorch) or Trainer(Gluon) clears the gradients of all parameters. In gluon, there is no need to clear the gradients every batch if <code>grad_req = 'write'</code>(default).</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clear the gradients</td>
+<td><code>optm = torch.optim.SGD(model.parameters(), lr=0.1)</code><br/><code>optm.zero_grad()</code><br/><code>loss_fn(model(input), target).backward()</code><br/><code>optm.step()</code></td>
+<td><code>trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': 0.1})</code><br/><code>with autograd.record():</code><br/>    <code>loss = loss_fn(net(data), label)</code><br/><code>loss.backward()</code><br/><code>trainer.step(batch_size)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="multi-gpu-training">Multi-GPU training&nbsp;<a class="anchor" href="#multi-gpu-training"><i class="small linkify icon"></i></a> </h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data parallelism</td>
+<td><code>net = torch.nn.DataParallel(model, device_ids=[0, 1, 2])</code><br/><code>output = net(data)</code></td>
+<td><code>ctx = [mx.gpu(i) for i in range(3)]</code><br/><code>data = gluon.utils.split_and_load(data, ctx)</code><br/><code>label = gluon.utils.split_and_load(label, ctx)</code><br/><code>with autograd.record():</code><br/>    <code>losses = [loss(net(X), Y) for X, Y in zip(data, label)]</code><br/><code>for l in losses:</code><br/>    <code>l.backward()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="distributed-training">Distributed training&nbsp;<a class="anchor" href="#distributed-training"><i class="small linkify icon"></i></a> </h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distributed data parallelism</td>
+<td><code>torch.distributed.init_process_group(...)</code><br/><code>model = torch.nn.parallel.distributedDataParallel(model, ...)</code></td>
+<td><code>store = kv.create('dist')</code><br/><code>trainer = gluon.Trainer(net.collect_params(), ..., kvstore=store)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="monitoring">Monitoring&nbsp;<a class="anchor" href="#monitoring"><i class="small linkify icon"></i></a> </h2>
+<h3 id="mxnet-has-pre-defined-metrics">MXNet has pre-defined metrics&nbsp;<a class="anchor" href="#mxnet-has-pre-defined-metrics"><i class="small linkify icon"></i></a> </h3>
+<p>Gluon provide several predefined metrics which can online evaluate the performance of a learned model.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metric</td>
+<td>Not available</td>
+<td><code>metric = mx.metric.Accuracy()</code><br/><code>with autograd.record():</code><br/>    <code>output = net(data)</code><br/>    <code>L = loss(ouput, label)</code><br/>    <code>loss(ouput, label).backward()</code><br/><code>trainer.step(batch_size)</code><br/><code>metric.update(label, output)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-visualization">Data visualization&nbsp;<a class="anchor" href="#data-visualization"><i class="small linkify icon"></i></a> </h3>
+<p>tensorboardX(PyTorch) and dmlc-tensorboard(Gluon) can be used to visualize your network and plot quantitative metrics about the execution of your graph.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>PyTorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>visualization</td>
+<td><code>writer = tensorboardX.SummaryWriter()</code><br/><code>...</code><br/><code>for name, param in model.named_parameters():</code><br/>    <code>grad = param.clone().cpu().data.numpy()</code><br/>    <code>writer.add_histogram(name, grad, n_iter)</code><br/><code>...</code><br/><code>writer.close()</code></td>
+<td><code>summary_writer = tensorboard.FileWriter('./logs/')</code><br/><code>...</code><br/><code>for name, param in net.collect_params():</code><br/>    <code>grad = param.grad.asnumpy().flatten()</code><br/>    <code>s = tensorboard.summary.histogram(name, grad)</code><br/>    <code>summary_writer.add_summary(s)</code><br/><code>...</code><br/><code>tensorboard.summary_writer.close()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="io-and-deploy">I/O and deploy&nbsp;<a class="anchor" href="#io-and-deploy"><i class="small linkify icon"></i></a> </h2>
+<h3 id="data-loading">Data loading&nbsp;<a class="anchor" href="#data-loading"><i class="small linkify icon"></i></a> </h3>
+<p><code>Dataset</code> and <code>DataLoader</code> are the basic components for loading data.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dataset holding arrays</td>
+<td><code>torch.utils.data.TensorDataset(data_tensor, label_tensor)</code></td>
+<td><code>gluon.data.ArrayDataset(data_array, label_array)</code></td>
+</tr>
+<tr>
+<td>Data loader</td>
+<td><code>torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False, sampler=None, batch_sampler=None, num_workers=0, collate_fn=&lt;function default_collate&gt;, drop_last=False)</code></td>
+<td><code>gluon.data.DataLoader(dataset, batch_size=None, shuffle=False, sampler=None, last_batch='keep', batch_sampler=None, batchify_fn=None, num_workers=0)</code></td>
+</tr>
+<tr>
+<td>Sequentially applied sampler</td>
+<td><code>torch.utils.data.sampler.SequentialSampler(data_source)</code></td>
+<td><code>gluon.data.SequentialSampler(length)</code></td>
+</tr>
+<tr>
+<td>Random order sampler</td>
+<td><code>torch.utils.data.sampler.RandomSampler(data_source)</code></td>
+<td><code>gluon.data.RandomSampler(length)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Some commonly used datasets for computer vision are provided in <code>mx.gluon.data.vision</code> package.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MNIST handwritten digits dataset.</td>
+<td><code>torchvision.datasets.MNIST</code></td>
+<td><code>mx.gluon.data.vision.MNIST</code></td>
+</tr>
+<tr>
+<td>CIFAR10 Dataset.</td>
+<td><code>torchvision.datasets.CIFAR10</code></td>
+<td><code>mx.gluon.data.vision.CIFAR10</code></td>
+</tr>
+<tr>
+<td>CIFAR100 Dataset.</td>
+<td><code>torchvision.datasets.CIFAR100</code></td>
+<td><code>mx.gluon.data.vision.CIFAR100</code></td>
+</tr>
+<tr>
+<td>A generic data loader where the images are arranged in folders.</td>
+<td><code>torchvision.datasets.ImageFolder(root, transform=None, target_transform=None, loader=&lt;function default_loader&gt;)</code></td>
+<td><code>mx.gluon.data.vision.ImageFolderDataset(root, flag, transform=None)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="serialization">Serialization&nbsp;<a class="anchor" href="#serialization"><i class="small linkify icon"></i></a> </h3>
+<p>Serialization and De-Serialization are achieved by calling <code>save_parameters</code> and <code>load_parameters</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Pytorch</th>
+<th>MXNet Gluon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save model parameters</td>
+<td><code>torch.save(the_model.state_dict(), filename)</code></td>
+<td><code>model.save_parameters(filename)</code></td>
+</tr>
+<tr>
+<td>Load parameters</td>
+<td><code>the_model.load_state_dict(torch.load(PATH))</code></td>
+<td><code>model.load_parameters(filename, ctx, allow_missing=False, ignore_extra=False)</code></td>
+</tr>
+</tbody>
+</table>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					<span>No Tag</span>
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="/images/myavatar.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/xlhaw">
+	<p class="name">Leon Xiao</p>
+	</a>
+	<p class="desc">A clumsy interpreter and a soul nowhere to be placed</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot; &quot; by @xlhaw https:\/\/www.xlhaw.com\/posts\/2020-02-09\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+				<section class="ui secondary attached segment copyright">
+					
+
+				</section>
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/www.xlhaw.com\/posts\/2020-02-09\/';
+		this.page.identifier = '15ebb291226c71d51e0bf79158d3dc95';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'xlhaw' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="mailto:i@xlhaw.com" target="	_blank">
+					<i id="ico" class="inverted big link mail icon" title="Email"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://www.linkedin.com/in/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me">About Me</h1>
+<hr>
+<h2 id="hi-im-leon-an-engineer-in-the-hdd-industry-and-also-an-advocate-of-internet-python-and-high-tech">Hi, I&rsquo;m Leon, an engineer in the HDD industry, and also an advocate of <strong>internet</strong>, <strong>python</strong> and <strong>high-tech</strong>.</h2>
+<h2 id="writing-is-not-an-easy-task-for-me-but-life-shouldnt-be-easy-so-here-i-am-and-as-well-as-in-other-areas">Writing is not an easy task for me. But life shouldn&rsquo;t be easy, so here I am and as well as in other areas.</h2>
+<h3 id="if-you-are-interested-in-knowing-more-read-my-articles-or-visit-my-resumehttpswwwxlhawcomkeynotecv">If you are interested in knowing more, read my articles or visit my <a href="https://www.xlhaw.com/keynote/cv/">resume</a>.</h3>
+
+				</article>
+				
+				
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	<script id="dsq-count-scr" src="//xlhaw.disqus.com/count.js" async></script>
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-112332904-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

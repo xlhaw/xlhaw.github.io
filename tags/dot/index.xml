@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dot on Leon Xiao&#39;s Blog</title>
@@ -6,10 +6,17 @@
     <description>Recent content in dot on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Mar 2018 20:58:30 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.xlhaw.com/tags/dot/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 02 Oct 2020 20:58:30 +0000</lastBuildDate><atom:link href="https://www.xlhaw.com/tags/dot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Try Try</title>
+      <link>https://www.xlhaw.com/posts/2020-09-26/</link>
+      <pubDate>Fri, 02 Oct 2020 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-09-26/</guid>
+      <description>Who Know It&amp;rsquo;s another kind of waste. simplify to the logic of state transfer object &amp;amp; connection/field/force
+from a list to another list from fact/news to insight and knowledge from raw materials to products from electronics to intelligence/robot
+the evolution of technology and society. a matter of flow rather than inventory static/dynamic view what can you contribute to the process between transfer/transform make a better chart does not make it more meaningful but you can trace back to the tedious life?</description>
+    </item>
     
     <item>
       <title>A brief Introduction to DOT language</title>
@@ -18,6 +25,26 @@
       
       <guid>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</guid>
       <description>Free from the Restrictions I have been quite obsessed with fancy tools and techniques. Before I met DOT, I have tried many tools to reorganize my thought. Such as Visio, Grapholite, SimpleMind, Xmind, MindNode, iMindMap barabara, such a long list. Each software has its own charming features as well as some minor restrictions. But what&amp;rsquo;s annoying most for a perfectionist is to finetune the layout and format. DOT actually gives you the opportunity to free yourself from those trivial matters, what you need to do is just focus on your own thinking and leave the rest to DOT.</description>
+    </item>
+    
+    <item>
+      <title>Better Readme</title>
+      <link>https://www.xlhaw.com/posts/2020-10-06/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-10-06/</guid>
+      <description>Hi there, I&amp;rsquo;m Jesse - aka codeSTACKr 👋  
+I&amp;rsquo;m a Husband, Father, Developer, and Teacher!!  🔭 I just launched my first course: Become A VS Code SuperHero!! 🌱 I’m currently learning everything 🤣 👯 I’m looking to collaborate with other content creators 🥅 2020 Goals: Contribute more to Open Source projects ⚡ Fun fact: I love to draw and play guitar / drums  Spotify Playing 🎧</description>
+    </item>
+    
+    <item>
+      <title>Pipeline: The thing you really need to take it serious</title>
+      <link>https://www.xlhaw.com/posts/pipeline/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/pipeline/</guid>
+      <description>Dash/Streamlit/ImpressJS/RevealJS -&amp;gt; Heroku/Github/Gitee Gitbook/docsify/Bookdown
+Onedrive, GoogleDrive, iCloud,</description>
     </item>
     
   </channel>

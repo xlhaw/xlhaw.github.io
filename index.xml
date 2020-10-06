@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leon Xiao&#39;s Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content on Leon Xiao&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.xlhaw.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 02 Oct 2020 20:58:30 +0000</lastBuildDate><atom:link href="https://www.xlhaw.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resume</title>
       <link>https://www.xlhaw.com/cards/cv/</link>
@@ -18,6 +14,17 @@
       
       <guid>https://www.xlhaw.com/cards/cv/</guid>
       <description>What&amp;rsquo;s your legacy</description>
+    </item>
+    
+    <item>
+      <title>Try Try</title>
+      <link>https://www.xlhaw.com/posts/2020-09-26/</link>
+      <pubDate>Fri, 02 Oct 2020 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-09-26/</guid>
+      <description>Who Know It&amp;rsquo;s another kind of waste. simplify to the logic of state transfer object &amp;amp; connection/field/force
+from a list to another list from fact/news to insight and knowledge from raw materials to products from electronics to intelligence/robot
+the evolution of technology and society. a matter of flow rather than inventory static/dynamic view what can you contribute to the process between transfer/transform make a better chart does not make it more meaningful but you can trace back to the tedious life?</description>
     </item>
     
     <item>
@@ -42,6 +49,26 @@ unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum
     </item>
     
     <item>
+      <title>Better Readme</title>
+      <link>https://www.xlhaw.com/posts/2020-10-06/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-10-06/</guid>
+      <description>Hi there, I&amp;rsquo;m Jesse - aka codeSTACKr 👋  
+I&amp;rsquo;m a Husband, Father, Developer, and Teacher!!  🔭 I just launched my first course: Become A VS Code SuperHero!! 🌱 I’m currently learning everything 🤣 👯 I’m looking to collaborate with other content creators 🥅 2020 Goals: Contribute more to Open Source projects ⚡ Fun fact: I love to draw and play guitar / drums  Spotify Playing 🎧</description>
+    </item>
+    
+    <item>
+      <title>Pipeline: The thing you really need to take it serious</title>
+      <link>https://www.xlhaw.com/posts/pipeline/</link>
+      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/pipeline/</guid>
+      <description>Dash/Streamlit/ImpressJS/RevealJS -&amp;gt; Heroku/Github/Gitee Gitbook/docsify/Bookdown
+Onedrive, GoogleDrive, iCloud,</description>
+    </item>
+    
+    <item>
       <title>New Year&#39;s Plan 2018</title>
       <link>https://www.xlhaw.com/posts/new-year-plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
@@ -58,7 +85,7 @@ Cliche as always. I don&amp;rsquo;t recall how many blogs I have created before.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/404/</guid>
-      <description> Error 404: Page Not Found Oopsie! It seems that the page that you&amp;rsquo;re trying to access doesn&amp;rsquo;t exist. 😟 If you&amp;rsquo;re sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page. </description>
+      <description>Error 404: Page Not Found  Oopsie! It seems that the page that you&amp;rsquo;re trying to access doesn&amp;rsquo;t exist. 😟 If you&amp;rsquo;re sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page. </description>
     </item>
     
     <item>
@@ -67,7 +94,47 @@ Cliche as always. I don&amp;rsquo;t recall how many blogs I have created before.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.xlhaw.com/about/</guid>
-      <description> About Me Hi, I&amp;rsquo;m Leon, an engineer in the HDD industry, and also an advocate of internet, python and high-tech. Writing is not an easy task for me. But life shouldn&amp;rsquo;t be easy, so here I am and as well as in other areas. If you are interested in knowing more, read my articles or visit my resume. </description>
+      <description>About Me  Hi, I&amp;rsquo;m Leon, an engineer in the HDD industry, and also an advocate of internet, python and high-tech. Writing is not an easy task for me. But life shouldn&amp;rsquo;t be easy, so here I am and as well as in other areas. If you are interested in knowing more, read my articles or visit my resume. </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/2020-02-09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-02-09/</guid>
+      <description># PyTorch to MXNet This cheatsheet serves as a quick reference for PyTorch users.
+Pytorch Tensor and MXNet NDArray Tensor operation We document PyTorch function names that are different than MXNet NDArray
+   Function PyTorch MXNet Gluon     Element-wise inverse cosine x.acos() or torch.acos(x) nd.arccos(x)   Batch Matrix product and accumulation torch.addbmm(M, batch1, batch2) nd.linalg_gemm(M, batch1, batch2) Leading n-2 dim are reduced   Element-wise division of t1, t2, multiply v, and add t torch.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/2020-03-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-03-01/</guid>
+      <description>%% Example with selection of syntaxes gantt dateForma[README](images/README.md)t YYYY-MM-DD title Adding GANTT diagram functionality to mermaid section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d section Critical tasks Completed task in the critical line :crit, done, 2014-01-06,24h Implement parser and jison :crit, done, after des1, 2d Create tests for parser :crit, active, 3d Future task in critical line :crit, 5d Create tests for renderer :2d Add to mermaid :1d section Documentation Describe gantt syntax :active, a1, after des1, 3d Add gantt diagram to demo page :after a1 , 20h Add another diagram to demo page :doc1, after a1 , 48h section Last section Describe gantt syntax :after doc1, 3d Add gantt diagram to demo page : 20h Add another diagram to demo page : 48h ​``` ​ ​ ​ it hopes to provide a nuanced comprehension about the status, opportunities, and needs of AI chip industry.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/2020-05-31/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/2020-05-31/</guid>
+      <description>Inspired by dannyfritz/commit-message-emoji
+See also gitmoji.
+   Commit type Emoji     Initial commit 🎉 🎉   Version tag 🔖 🔖   New feature ✨ ✨   Bugfix 🐛 🐛   Metadata 📇 📇   Documentation 📚 📚   Documenting source code 💡 💡   Performance 🐎 🐎   Cosmetic 💄 💄   Tests 🚨 🚨   Adding a test ✅ ✅   Make a test pass ✔️ ✔️   General update ⚡ ⚡   Improve format/structure 🎨 🎨   Refactor code 🔨 🔨   Removing code/files 🔥 🔥   Continuous Integration 💚 💚   Security 🔒 🔒   Upgrading dependencies ⬆️ ⬆️   Downgrading dependencies ⬇️ ⬇️   Lint 👕 👕   Translation 👽 👽   Text ✏ ✏   Critical hotfix 🚑 🚑   Deploying stuff 🚀 🚀   Fixing on MacOS 🍎 🍎   Fixing on Linux 🐧 🐧   Fixing on Windows 🏁 🏁   Work in progress 🚧 🚧   Adding CI build system 👷‍♂️ 👷‍♂️   Analytics or tracking code 📈 📈   Removing a dependency ➖ ➖   Adding a dependency ➕ ➕   Docker 🐳 🐳   Configuration files 🔧 🔧   Package.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/use-plot-with-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/use-plot-with-python/</guid>
+      <description>Most Used Plot gitGraph: options { &amp;quot;nodeSpacing&amp;quot;: 150, &amp;quot;nodeRadius&amp;quot;: 10 } end commit branch newbranch checkout newbranch commit commit checkout master commit commit merge newbranch graph LR TDMR --&amp;gt; S --&amp;gt; CTL --&amp;gt; F </description>
     </item>
     
   </channel>

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>
+	
+</title>
+		<style>
+	body {
+		display: block;
+		--colorBG: "#40e0d0, #ff8c00, #ff0080";
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		
+	}
+
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	<meta name="author" content="Leon Xiao" />
+	<meta name="description" content="%% Example with selection of syntaxes gantt dateForma[README](images/README.md)t YYYY-MM-DD title Adding GANTT diagram functionality to mermaid section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d section Critical tasks Completed task in the critical line :crit, done, 2014-01-06,24h Implement parser and jison :crit, done, after des1, 2d Create tests for parser :crit, active, 3d Future task in critical line :crit, 5d Create tests for renderer :2d Add to mermaid :1d section Documentation Describe gantt syntax :active, a1, after des1, 3d Add gantt diagram to demo page :after a1 , 20h Add another diagram to demo page :doc1, after a1 , 48h section Last section Describe gantt syntax :after doc1, 3d Add gantt diagram to demo page : 20h Add another diagram to demo page : 48h ​``` ​ ​ ​ it hopes to provide a nuanced comprehension about the status, opportunities, and needs of AI chip industry." />
+
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+	<link rel="stylesheet" type="text/css" href="/css/highlight.css">
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css">
+	
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  true 
+	var enabledPost =  false 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+	var gradients = [
+	  [],
+	  ['#40e0d0', '#ff8c00', '#ff0080'], 
+	  ['#3e5151', '#decba4'], 
+	  ['#11998e', '#38ef7d'], 
+	  ['#108dc7', '#ef8e38'], 
+	  ['#fc5c7d', '#6a82fb'], 
+	  ['#fc466b', '#3f5efb'], 
+	  ['#c94b4b', '#4b134f'], 
+	  ['#23074d', '#cc5333'] 
+	];
+	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]));
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+
+
+
+
+	
+		<a class="ui label violet " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label brown " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label purple " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label green " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label yellow " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label brown " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label teal " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+		<a class="ui label pink " href="/tags/widget" title="widget">widget</a>
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-09-26/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Try Try</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-10-06/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Better Readme</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/pipeline/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Pipeline: The thing you really need to take it serious</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		
+			<div class="item">
+				<a href="/posts">
+					<i class="inverted big link archive icon" title="Archive"></i>
+				</a>
+			</div>
+		
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Click this to pop tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+
+
+
+
+	
+		<a class="ui label violet " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label brown " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label teal " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label yellow " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label pink " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label pink " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label olive " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+		<a class="ui label yellow " href="/tags/widget" title="widget">widget</a>
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-09-26/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Try Try</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/2020-10-06/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Better Readme</p>
+				</div>
+			</a>
+		
+			<a class="item" href="https://www.xlhaw.com/posts/pipeline/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Pipeline: The thing you really need to take it serious</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Jan 1, 0001</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://www.xlhaw.com/posts/2020-03-01/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="d7bd07fa2e678bc409d10c965d16cc4a"></a></span></div>
+					<div><span><i class="clock outline icon"></i>4 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Jan 1, 0001</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents"></nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					<pre><code class="language-mermaid" data-lang="mermaid">%% Example with selection of syntaxes
+        gantt
+        dateForma[README](images/README.md)t  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+
+        section Documentation
+        Describe gantt syntax               :active, a1, after des1, 3d
+        Add gantt diagram to demo page      :after a1  , 20h
+        Add another diagram to demo page    :doc1, after a1  , 48h
+
+        section Last section
+        Describe gantt syntax               :after doc1, 3d
+        Add gantt diagram to demo page      : 20h
+        Add another diagram to demo page    : 48h
+​```
+​
+​
+​
+it hopes to provide a nuanced comprehension about the status, opportunities, and needs of AI chip industry.
+calls for joint efforts to facilitate a rapid growth of the
+AI chip industry
+ it shares the prospect of AI chip development and points out that
+the AI technology is still at a nascent stage, a wide range of challenges are expected to arise in both technical
+and commercial spheres.
+
+ It is necessary to refrain from impetuousness and short-term opportunist behaviors at a time when the industry is booming rapidly.
+ 
+ The AI chips discussed in this white paper mainly include three types: the first one is universal chips that can
+support AI applications efficiently through hardware and software optimization, such as GPU; the second one
+is chips that focus on accelerating machine learning (especially neural networks and deep learning), which is
+the most popular form of AI chips at present. The third one is the neuromorphic computing chips inspired by
+biological brain.
+.
+The proper assignment and scheduling of process elements, memory access and tasks will be the key
+factors to be considered in the toolchain.
+![](/images/bg4.jpeg)
+
+Inspired by [dannyfritz/commit-message-emoji](https://github.com/dannyfritz/commit-message-emoji)
+
+See also [gitmoji](https://gitmoji.carloscuesta.me/).
+
+|   Commit type              | Emoji                                         |
+|:---------------------------|:----------------------------------------------|
+| Initial commit             | 🎉 `🎉`                               |
+| Version tag                | 🔖 `🔖`                       |
+| New feature                | ✨ `✨`                       |
+| Bugfix                     | 🐛 `🐛`                                 |
+| Metadata                   | 📇 `📇`                   |
+| Documentation              | 📚 `📚`                             |
+| Documenting source code    | 💡 `💡`                               |
+| Performance                | 🐎 `🐎`                     |
+| Cosmetic                   | 💄 `💄`                       |
+| Tests                      | 🚨 `🚨`           |
+| Adding a test              | ✅ `✅`       |
+| Make a test pass           | ✔️ `✔️`       |
+| General update             | ⚡ `⚡`                                 |
+| Improve format/structure   | 🎨 `🎨`                                 |
+| Refactor code              | 🔨 `🔨`                           |
+| Removing code/files        | 🔥 `🔥`                               |
+| Continuous Integration     | 💚 `💚`                 |
+| Security                   | 🔒 `🔒`                               |
+| Upgrading dependencies     | ⬆️ `⬆️`                       |
+| Downgrading dependencies   | ⬇️ `⬇️`                   |
+| Lint                       | 👕 `👕`                             |
+| Translation                | 👽 `👽`                             |
+| Text                       | ✏ `✏`                           |
+| Critical hotfix            | 🚑 `🚑`                     |
+| Deploying stuff            | 🚀 `🚀`                           |
+| Fixing on MacOS            | 🍎 `🍎`                             |
+| Fixing on Linux            | 🐧 `🐧`                         |
+| Fixing on Windows          | 🏁 `🏁`           |
+| Work in progress           | 🚧  `🚧`              |
+| Adding CI build system     | 👷‍♂️ `👷‍♂️` |
+| Analytics or tracking code | 📈 `📈` |
+| Removing a dependency      | ➖ `➖`       |
+| Adding a dependency        | ➕ `➕`         |
+| Docker                     | 🐳 `🐳`                             |
+| Configuration files        | 🔧 `🔧`                           |
+| Package.json in JS         | 📦 `📦`                         |
+| Merging branches           | 🔀 `🔀` |
+| Bad code / need improv.    | 💩 `💩`                           |
+| Reverting changes          | ⏪ `⏪`                           |
+| Breaking changes           | 💥 `💥`                               |
+| Code review changes        | 👌 `👌`                         |
+| Accessibility              | ♿ `♿`                   |
+| Move/rename repository     | 🚚 `🚚`                             |
+| Other                      | [Be creative](http://www.emoji-cheat-sheet.com/)  |
+
+
+
+</code></pre>
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					<span>No Tag</span>
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="/images/myavatar.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/xlhaw">
+	<p class="name">Leon Xiao</p>
+	</a>
+	<p class="desc">A clumsy interpreter and a soul nowhere to be placed</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot; &quot; by @xlhaw https:\/\/www.xlhaw.com\/posts\/2020-03-01\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+				<section class="ui secondary attached segment copyright">
+					
+
+				</section>
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/www.xlhaw.com\/posts\/2020-03-01\/';
+		this.page.identifier = 'd7bd07fa2e678bc409d10c965d16cc4a';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'xlhaw' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="mailto:i@xlhaw.com" target="	_blank">
+					<i id="ico" class="inverted big link mail icon" title="Email"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://www.linkedin.com/in/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me">About Me</h1>
+<hr>
+<h2 id="hi-im-leon-an-engineer-in-the-hdd-industry-and-also-an-advocate-of-internet-python-and-high-tech">Hi, I&rsquo;m Leon, an engineer in the HDD industry, and also an advocate of <strong>internet</strong>, <strong>python</strong> and <strong>high-tech</strong>.</h2>
+<h2 id="writing-is-not-an-easy-task-for-me-but-life-shouldnt-be-easy-so-here-i-am-and-as-well-as-in-other-areas">Writing is not an easy task for me. But life shouldn&rsquo;t be easy, so here I am and as well as in other areas.</h2>
+<h3 id="if-you-are-interested-in-knowing-more-read-my-articles-or-visit-my-resumehttpswwwxlhawcomkeynotecv">If you are interested in knowing more, read my articles or visit my <a href="https://www.xlhaw.com/keynote/cv/">resume</a>.</h3>
+
+				</article>
+				
+				
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	<script id="dsq-count-scr" src="//xlhaw.disqus.com/count.js" async></script>
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-112332904-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

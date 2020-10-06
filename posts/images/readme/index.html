@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>
+	
+</title>
+		<style>
+	body {
+		display: block;
+		--colorBG: "#40e0d0, #ff8c00, #ff0080";
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		
+	}
+
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	<meta name="author" content="Leon Xiao" />
+	<meta name="description" content="简介 本项目为Flutter中文网《Flutter实战》开源电子书项目，官网地址为：https://book.flutterchina.club 。
+本书随书源码：https://github.com/wendux/flutter_in_action_source_code
+🔥🔥🔥 **本书实体书正在出版中，先需要收集一些读者评价，刊印在本书封底，现诚邀读者为本书写书评。**书评提交地址：https://github.com/flutterchina/flutter-in-action/issues/248。
+贡献须知 本书目前仍在创作中，如果您想参与到本书创作，欢迎提PR。本书目录结构如下：
+   目录及文件 说明     docs 文档目录，您应该在此目录下对应的章节文件夹下修改/创建Markdown文档   _book 打包后的网站代码目录，您不应该手动修改此目录下的文档   docs/SUMMARY.md 本书目录，要修改目录请参考本文档中前面章节。   docs/imgs 本书所引的图片、截图目录    图片引入说明 为了后续图片能够容易上CDN，如果您需要在文档中引入新的图片，请按如下步骤操作：
+  将您的图片大小进行调整，有一个要求是图片高度最大不能超过500像素，原则上单张图片最大不能超过300K.
+  将图片拷贝到docs/imgs目录，注意不要重名
+  在你的文章中用相对路径引用，如：
+![](../imgs/xx.jpg)   当您提交内容被合入后，我们会来上传CDN，自动替换图片链接，然后回提到仓库中，在您下次提交之前，您需要先pull一下变更。
+构建环境搭建 本书是采用gitbook编写，要想在本地运行网站，需要安装一下环境：
+  安装node；如果已经安装过node，可以省略这一步。node安装方法自行百度。
+  安装gitbook。
+1  npm i -g gitbook-cli     本地进入到本项目根目录，运行：
+1  gitbook install #安装本书构建所要依赖的插件     运行网站，可以编辑了~" />
+
+
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+	<link rel="stylesheet" type="text/css" href="/css/highlight.css">
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css">
+	
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background: linear-gradient(to right, var(--colorBG)) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  true 
+	var enabledPost =  false 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+	var gradients = [
+	  [],
+	  ['#40e0d0', '#ff8c00', '#ff0080'], 
+	  ['#3e5151', '#decba4'], 
+	  ['#11998e', '#38ef7d'], 
+	  ['#108dc7', '#ef8e38'], 
+	  ['#fc5c7d', '#6a82fb'], 
+	  ['#fc466b', '#3f5efb'], 
+	  ['#c94b4b', '#4b134f'], 
+	  ['#23074d', '#cc5333'] 
+	];
+	document.body.style.setProperty('--colorBG', connect(gradients[getRandomInt(0, gradients.length)]));
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+
+
+
+
+	
+		<a class="ui label yellow " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label violet " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label yellow " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label purple " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label brown " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label red " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label violet " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		
+			<div class="item">
+				<a href="/posts">
+					<i class="inverted big link archive icon" title="Archive"></i>
+				</a>
+			</div>
+		
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="/images/myavatar.jpg">
+	
+</div>
+
+
+<h3 class="ui header">
+	Leon Xiao
+	<div class="sub header">A clumsy interpreter and a soul nowhere to be placed</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Click this to pop tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+
+
+
+
+	
+		<a class="ui label green " href="/tags/dot" title="dot">dot</a>
+	
+		<a class="ui label olive " href="/tags/example" title="example">example</a>
+	
+		<a class="ui label purple " href="/tags/graphviz" title="graphviz">graphviz</a>
+	
+		<a class="ui label red " href="/tags/greeting" title="greeting">greeting</a>
+	
+		<a class="ui label purple " href="/tags/plan" title="plan">plan</a>
+	
+		<a class="ui label violet " href="/tags/r" title="r">r</a>
+	
+		<a class="ui label pink " href="/tags/r-markdown" title="r-markdown">r-markdown</a>
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/lifestyle">lifestyle</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/new-year-plan/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>New Year&#39;s Plan 2018</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/notes">notes</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/programming">programming</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/rmad-rmd/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>R &amp; RMarkdown Quick Start</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tools">tools</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>A brief Introduction to DOT language</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2020 Leon Xiao&#39;s Blog</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Jan 1, 0001</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="https://www.xlhaw.com/posts/images/readme/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="c8b91984d30ae47eddc1ba21d619e74d"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Jan 1, 0001</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+  <ul>
+    <li><a href="#贡献须知">贡献须知</a>
+      <ul>
+        <li><a href="#图片引入说明">图片引入说明</a></li>
+        <li><a href="#构建环境搭建">构建环境搭建</a></li>
+        <li><a href="#哪些章节还没有写">哪些章节还没有写？</a></li>
+        <li><a href="#提交更新">提交更新</a></li>
+      </ul>
+    </li>
+    <li><a href="#勘误">勘误</a></li>
+    <li><a href="#联系方式">联系方式</a></li>
+    <li><a href="#免费">免费？</a></li>
+  </ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					<h1 id="简介">简介&nbsp;<a class="anchor" href="#简介"><i class="small linkify icon"></i></a> </h1>
+<p>本项目为Flutter中文网《Flutter实战》开源电子书项目，官网地址为：https://book.flutterchina.club 。</p>
+<p>本书随书源码：https://github.com/wendux/flutter_in_action_source_code</p>
+<p>🔥🔥🔥 **本书实体书正在出版中，先需要收集一些读者评价，刊印在本书封底，现诚邀读者为本书写书评。**书评提交地址：https://github.com/flutterchina/flutter-in-action/issues/248。</p>
+<h2 id="贡献须知">贡献须知&nbsp;<a class="anchor" href="#贡献须知"><i class="small linkify icon"></i></a> </h2>
+<p>本书目前仍在创作中，如果您想参与到本书创作，欢迎提PR。本书目录结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>目录及文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docs</td>
+<td>文档目录，您应该在此目录下对应的章节文件夹下修改/创建Markdown文档</td>
+</tr>
+<tr>
+<td>_book</td>
+<td>打包后的网站代码目录，您不应该手动修改此目录下的文档</td>
+</tr>
+<tr>
+<td>docs/SUMMARY.md</td>
+<td>本书目录，要修改目录请参考本文档中前面章节。</td>
+</tr>
+<tr>
+<td>docs/imgs</td>
+<td>本书所引的图片、截图目录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="图片引入说明">图片引入说明&nbsp;<a class="anchor" href="#图片引入说明"><i class="small linkify icon"></i></a> </h3>
+<p>为了后续图片能够容易上CDN，如果您需要在文档中引入新的图片，请按如下步骤操作：</p>
+<ol>
+<li>
+<p>将您的图片大小进行调整，有一个要求是图片高度最大不能超过500像素，原则上单张图片最大不能超过300K.</p>
+</li>
+<li>
+<p>将图片拷贝到docs/imgs目录，注意不要重名</p>
+</li>
+<li>
+<p>在你的文章中用<strong>相对路径</strong>引用，如：</p>
+<pre><code>![](../imgs/xx.jpg)
+</code></pre></li>
+</ol>
+<p>当您提交内容被合入后，我们会来上传CDN，自动替换图片链接，然后回提到仓库中，在您下次提交之前，您需要先pull一下变更。</p>
+<h3 id="构建环境搭建">构建环境搭建&nbsp;<a class="anchor" href="#构建环境搭建"><i class="small linkify icon"></i></a> </h3>
+<p>本书是采用gitbook编写，要想在本地运行网站，需要安装一下环境：</p>
+<ol>
+<li>
+<p>安装node；如果已经安装过node，可以省略这一步。node安装方法自行百度。</p>
+</li>
+<li>
+<p>安装gitbook。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -g gitbook-cli
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>本地进入到本项目根目录，运行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">gitbook install <span class="c1">#安装本书构建所要依赖的插件</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>运行网站，可以编辑了~</p>
+<pre><code>gitbook serve 
+</code></pre></li>
+</ol>
+<h3 id="哪些章节还没有写">哪些章节还没有写？&nbsp;<a class="anchor" href="#哪些章节还没有写"><i class="small linkify icon"></i></a> </h3>
+<p>本书目前未完成部分在官网目录中会置灰，他们会统一链接到一个todo页面，您应该首先来写这一部分主题。如果您有新的章节想补充，请先联系我！沟通后如果觉得有必要方可添加。</p>
+<h3 id="提交更新">提交更新&nbsp;<a class="anchor" href="#提交更新"><i class="small linkify icon"></i></a> </h3>
+<p>为了保证书籍质量，提交后的内容都需要Review，所以您PR提交之后离正式合入可能会需要多次修改，为了节省时间，请在提交PR后的第一时间通知我Review。</p>
+<h2 id="勘误">勘误&nbsp;<a class="anchor" href="#勘误"><i class="small linkify icon"></i></a> </h2>
+<p>如果您发现本书的错误，欢迎PR。</p>
+<h2 id="联系方式">联系方式&nbsp;<a class="anchor" href="#联系方式"><i class="small linkify icon"></i></a> </h2>
+<p>微信号：Demons-du</p>
+<h2 id="免费">免费？&nbsp;<a class="anchor" href="#免费"><i class="small linkify icon"></i></a> </h2>
+<p>知识是应该付费的，创作不易，开源不等于免费，如果您是本书读者并手头宽裕，可以微信扫描下面二维码打赏，也不用太多，够买一杯咖啡就行。当然，如果您囊中羞涩，您也可以阅读本书，但我对您有个小小的要求，希望您在阅读的过程中能积极参与到本书的纠错以及未完成内容的创作上来，也算是有所付出。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/flutterchina/flutter-in-action@1.0.3/docs/imgs/pay.jpeg" alt=""></p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					<span>No Tag</span>
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="/images/myavatar.jpg">
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/xlhaw">
+	<p class="name">Leon Xiao</p>
+	</a>
+	<p class="desc">A clumsy interpreter and a soul nowhere to be placed</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot; &quot; by @xlhaw https:\/\/www.xlhaw.com\/posts\/images\/readme\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+				<section class="ui secondary attached segment copyright">
+					
+
+				</section>
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'https:\/\/www.xlhaw.com\/posts\/images\/readme\/';
+		this.page.identifier = 'c8b91984d30ae47eddc1ba21d619e74d';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'xlhaw' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="mailto:i@xlhaw.com" target="	_blank">
+					<i id="ico" class="inverted big link mail icon" title="Email"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://www.linkedin.com/in/xlhaw" target="	_blank">
+					<i id="ico" class="inverted big link linkedin icon" title="LinkedIn"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me">About Me</h1>
+<hr>
+<h2 id="hi-im-leon-an-engineer-in-the-hdd-industry-and-also-an-advocate-of-internet-python-and-high-tech">Hi, I&rsquo;m Leon, an engineer in the HDD industry, and also an advocate of <strong>internet</strong>, <strong>python</strong> and <strong>high-tech</strong>.</h2>
+<h2 id="writing-is-not-an-easy-task-for-me-but-life-shouldnt-be-easy-so-here-i-am-and-as-well-as-in-other-areas">Writing is not an easy task for me. But life shouldn&rsquo;t be easy, so here I am and as well as in other areas.</h2>
+<h3 id="if-you-are-interested-in-knowing-more-read-my-articles-or-visit-my-resumehttpswwwxlhawcomkeynotecv">If you are interested in knowing more, read my articles or visit my <a href="https://www.xlhaw.com/keynote/cv/">resume</a>.</h3>
+
+				</article>
+				
+				
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	<script id="dsq-count-scr" src="//xlhaw.disqus.com/count.js" async></script>
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-112332904-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>
