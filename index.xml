@@ -29,18 +29,6 @@ the evolution of technology and society. a matter of flow rather than inventory 
     </item>
     
     <item>
-      <title>R &amp; RMarkdown Quick Start</title>
-      <link>https://www.xlhaw.com/rmad-rmd/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/rmad-rmd/</guid>
-      <description>IntroductionR Vs Pandas/Pythonlibrary() source(.R) ~ import getwd() ~ os.getcwd() setwd(‘/’) ~ os.chdir(‘\’) df &amp;lt;- read.csv(path) ~ df=pd.read_csv(path)
-unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum cor(df[,c(‘a’,‘b’)]) ~df[[‘a’,‘b’]].corr() %in% ~ isin() subset(df,a==‘a’&amp;amp;b=‘b’) ~ df[(df.a==‘a’)&amp;amp;(df.b==‘b’)] %&amp;gt;% length(df$col) ~ df.col.shape merged = df1.merge(df2, on=‘id’) ~ merged=df1.merge(df2,on=‘id’) ?module ~ help(module)
-Data Structurec/list/array/matrix/factor/data.frame factor() behave like set() in python
-Control Flowfunction(input){} for (indx in start:end){} if (cond) {} else {} ifelse(cond,ifyes,ifno) switch(,do1,do2,…)</description>
-    </item>
-    
-    <item>
       <title>A brief Introduction to DOT language</title>
       <link>https://www.xlhaw.com/posts/a-brief-introduction-to-dot-language/</link>
       <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
@@ -57,16 +45,6 @@ unique(df\(col) ~ df.col.unique() summary(df\)col) ~ df.col.describe() sum ~ sum
       <guid>https://www.xlhaw.com/posts/2020-10-06/</guid>
       <description>Hi there, I&amp;rsquo;m Jesse - aka codeSTACKr 👋  
 I&amp;rsquo;m a Husband, Father, Developer, and Teacher!!  🔭 I just launched my first course: Become A VS Code SuperHero!! 🌱 I’m currently learning everything 🤣 👯 I’m looking to collaborate with other content creators 🥅 2020 Goals: Contribute more to Open Source projects ⚡ Fun fact: I love to draw and play guitar / drums  Spotify Playing 🎧</description>
-    </item>
-    
-    <item>
-      <title>Pipeline: The thing you really need to take it serious</title>
-      <link>https://www.xlhaw.com/posts/pipeline/</link>
-      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/pipeline/</guid>
-      <description>Dash/Streamlit/ImpressJS/RevealJS -&amp;gt; Heroku/Github/Gitee Gitbook/docsify/Bookdown
-Onedrive, GoogleDrive, iCloud,</description>
     </item>
     
     <item>
@@ -127,6 +105,18 @@ Pytorch Tensor and MXNet NDArray Tensor operation We document PyTorch function n
       <description>Inspired by dannyfritz/commit-message-emoji
 See also gitmoji.
    Commit type Emoji     Initial commit 🎉 🎉   Version tag 🔖 🔖   New feature ✨ ✨   Bugfix 🐛 🐛   Metadata 📇 📇   Documentation 📚 📚   Documenting source code 💡 💡   Performance 🐎 🐎   Cosmetic 💄 💄   Tests 🚨 🚨   Adding a test ✅ ✅   Make a test pass ✔️ ✔️   General update ⚡ ⚡   Improve format/structure 🎨 🎨   Refactor code 🔨 🔨   Removing code/files 🔥 🔥   Continuous Integration 💚 💚   Security 🔒 🔒   Upgrading dependencies ⬆️ ⬆️   Downgrading dependencies ⬇️ ⬇️   Lint 👕 👕   Translation 👽 👽   Text ✏ ✏   Critical hotfix 🚑 🚑   Deploying stuff 🚀 🚀   Fixing on MacOS 🍎 🍎   Fixing on Linux 🐧 🐧   Fixing on Windows 🏁 🏁   Work in progress 🚧 🚧   Adding CI build system 👷‍♂️ 👷‍♂️   Analytics or tracking code 📈 📈   Removing a dependency ➖ ➖   Adding a dependency ➕ ➕   Docker 🐳 🐳   Configuration files 🔧 🔧   Package.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/illustrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/illustrations/</guid>
+      <description>Neighborhood aggregation can be viewed as a center-surround filter.
+Train in an unsupervised manner using only the graph structure.
+ Define a neighborhood aggregation function. Define a loss function on the embeddings, L(zu) Train on a set of nodes, i.e., a batch of compute graphs Generate embeddings for nodes as needed (Even for nodes we never trained on!!)  The same aggregation parameters are shared for all nodes.
+GCNs and GraphSAGE generally only 2-3 layers deep.</description>
     </item>
     
     <item>

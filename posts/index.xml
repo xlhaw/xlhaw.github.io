@@ -38,15 +38,6 @@
     </item>
     
     <item>
-      <title>Pipeline: The thing you really need to take it serious</title>
-      <link>https://www.xlhaw.com/posts/pipeline/</link>
-      <pubDate>Sat, 17 Mar 2018 20:58:30 +0000</pubDate>
-      
-      <guid>https://www.xlhaw.com/posts/pipeline/</guid>
-      <description>A brief Introduction to DOT language </description>
-    </item>
-    
-    <item>
       <title>New Year&#39;s Plan 2018</title>
       <link>https://www.xlhaw.com/posts/new-year-plan/</link>
       <pubDate>Tue, 20 Feb 2018 09:18:00 +0000</pubDate>
@@ -84,6 +75,18 @@ Pytorch Tensor and MXNet NDArray Tensor operation We document PyTorch function n
       <description>Inspired by dannyfritz/commit-message-emoji
 See also gitmoji.
    Commit type Emoji     Initial commit 🎉 🎉   Version tag 🔖 🔖   New feature ✨ ✨   Bugfix 🐛 🐛   Metadata 📇 📇   Documentation 📚 📚   Documenting source code 💡 💡   Performance 🐎 🐎   Cosmetic 💄 💄   Tests 🚨 🚨   Adding a test ✅ ✅   Make a test pass ✔️ ✔️   General update ⚡ ⚡   Improve format/structure 🎨 🎨   Refactor code 🔨 🔨   Removing code/files 🔥 🔥   Continuous Integration 💚 💚   Security 🔒 🔒   Upgrading dependencies ⬆️ ⬆️   Downgrading dependencies ⬇️ ⬇️   Lint 👕 👕   Translation 👽 👽   Text ✏ ✏   Critical hotfix 🚑 🚑   Deploying stuff 🚀 🚀   Fixing on MacOS 🍎 🍎   Fixing on Linux 🐧 🐧   Fixing on Windows 🏁 🏁   Work in progress 🚧 🚧   Adding CI build system 👷‍♂️ 👷‍♂️   Analytics or tracking code 📈 📈   Removing a dependency ➖ ➖   Adding a dependency ➕ ➕   Docker 🐳 🐳   Configuration files 🔧 🔧   Package.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.xlhaw.com/posts/illustrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xlhaw.com/posts/illustrations/</guid>
+      <description>Neighborhood aggregation can be viewed as a center-surround filter.
+Train in an unsupervised manner using only the graph structure.
+ Define a neighborhood aggregation function. Define a loss function on the embeddings, L(zu) Train on a set of nodes, i.e., a batch of compute graphs Generate embeddings for nodes as needed (Even for nodes we never trained on!!)  The same aggregation parameters are shared for all nodes.
+GCNs and GraphSAGE generally only 2-3 layers deep.</description>
     </item>
     
     <item>
